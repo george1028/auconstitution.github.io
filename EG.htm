@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Executive Government</title>
+<meta charset="utf-8">
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css"/>
+</head>
+<body class="eg" onload="hide()">
+
+<div id="header">
+<p><a href="#sitemap" title="Site Map"><img alt="EGlogo" id="top" src="images/EGlogo.jpg" class="logo" title="Site Map"></a><h1>&nbsp;&nbsp;&nbsp;EXECUTIVE GOVERNMENT of AUSTRALIA</h1>
+</div>
+
+<div id="menu">
+<ul>
+<li class="menu"><h4><a href="C.htm" onclick="window.parent.Cchange()">Constitution</a></h4></li>
+<li class="dmenu"><h4><a href="HOR.htm" onclick="window.parent.HORchange()">House of <br/>Representatives</a></h4></li>
+<li class="menu"><h4><a href="HC.htm" onclick="window.parent.HCchange()">High Court</a></h4></li>
+<li class="menu"><h4><a href="S.htm" onclick="window.parent.Schange()">Senate</a></h4></li>
+<li class="menu"><h4><a href="#sitemap">Site Map</a></h4></li>
+<li class="menu"><h4><a href="mailto:131306105@polytechnicwest.wa.edu.au">Contact Me</a></h4></li>
+</ul>
+</div>
+
+<div id="link">
+<ul>
+<li class="sheadline"><a class="list" title="Attorney-General's Department" href="#agd">Attorney-General's Department</a></li>
+<li class="sheadline"><a class="list" title="Department of Agriculture, Fisheries and Forestry" href="#aff">Department of Agriculture, Fisheries and Forestry</a></li>
+<li class="sheadline"><a class="list" title="Department of Broadband, Communications and the Digital Economy" href="#bcde">Department of Broadband, Communications and the Digital Economy</a></li>
+<li class="sheadline"><a class="list" title="Department of Climate Change and Energy Efficiency" href="#ccee">Department of Climate Change and Energy Efficiency</a></li>
+<li class="sheadline"><a class="list" title="Department of Defence" href="#d">Department of Defence</a></li>
+<li class="sheadline"><a class="list" title="Department of Education, Employment and Workplace Relations" href="#eewr">Department of Education, Employment and Workplace Relations</a></li>
+<li class="sheadline"><a class="list" title="Department of Families, Housing, Community Services and Indigenous Affairs" href="#fhcsia">Department of Families, Housing, Community Services and Indigenous Affairs</a></li>
+<li class="sheadline"><a class="list" title="Department of Finance and Deregulation" href="#fd">Department of Finance and Deregulation</a></li>
+<li class="sheadline"><a class="list" title="Department of Foreign Affairs and Trade" href="#fat">Department of Foreign Affairs and Trade</a></li>
+<li class="sheadline"><a class="list" title="Department of Health and Ageing" href="#ha">Department of Health and Ageing</a></li>
+<li class="sheadline"><a class="list" title="Department of Human Services" href="#hs">Department of Human Services</a></li>
+<li class="sheadline"><a class="list" title="Department of Immigration and Citizenship" href="#ic">Department of Immigration and Citizenship</a></li>
+<li class="sheadline"><a class="list" title="Department of Infrastructure and Transport" href="#it">Department of Infrastructure and Transport</a></li>
+<li class="sheadline"><a class="list" title="Department of Industry, Innovation, Science, Research and Tertiary Education" href="#iisrte">Department of Industry, Innovation, Science, Research and Tertiary Education</a></li>
+<li class="sheadline"><a class="list" title="Department of Regional Australia, Local Government, Arts and Sport" href="#ralgas">Department of Regional Australia, Local Government, Arts and Sport</a></li>
+<li class="sheadline"><a class="list" title="Department of Resources, Energy and Tourism" href="#ret">Department of Resources, Energy and Tourism</a></li>
+<li class="sheadline"><a class="list" title="Department of Sustainability, Environment, Water, Population and Communities" href="#sewpc">Department of Sustainability, Environment, Water, Population and Communities</a></li>
+<li class="sheadline"><a class="list" title="Department of the Prime Minister and Cabinet" href="#pmc">Department of the Prime Minister and Cabinet</a></li>
+<li class="sheadline"><a class="list" title="Department of Veterans' Affairs" href="#va">Department of Veterans' Affairs</a></li>
+<li class="sheadline"><a class="list" title="Department of The Treasury" href="#t">Department of The Treasury</a></li>
+</ul>
+<div id="music">
+<audio id="index" src="music/pal34.mp3" controls autoplay>Your browser does not support HTML5 video.</audio>
+<script>
+myVid=document.getElementById("index");
+myVid.volume=0.4;
+function no(){
+if(document.getElementById("l1").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else if(document.getElementById("l2").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else if(document.getElementById("l3").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else alert("Please choose one");
+
+}
+function ok(){
+if(document.getElementById("m1").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m2").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m3").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m4").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m5").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m6").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+if(document.getElementById("submit").disabled){
+document.getElementById("yes").style.visibility="hidden";
+}
+else{
+alert("Please choose one");
+}
+}
+function show(){
+//document.getElementById("submit").disabled=false;
+document.getElementById("yes").style.visibility="visible";
+document.getElementById("rate").style.visibility="hidden";
+}
+function hide(){
+document.getElementById("yes").style.visibility="hidden";
+}
+</script>
+</div>
+</div>
+
+<div id="yes">
+<p>&nbsp;&nbsp;&nbsp;You really&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" id="submit1" onclick="no()">submit</button>
+</p>
+<form>
+<input type="radio" name="like" id="l1" value="cl">Like this page crazily<br>
+<input type="radio" name="like" id="l2" value="al">Like this page absolutely<br>
+<input type="radio" name="like" id="l3" value="vl">Like this page very much
+</form>
+<p>&nbsp;&nbsp;&nbsp;Your are&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" id="submit" onclick="ok()">submit</button>
+</p>
+<form>
+<input type="radio" name="mood" id="m1" value="h">Happy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="mood" id="m2" value="a">Angry&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="mood" id="m3" value="s">Smiling<br>
+<input type="radio" name="mood" id="m4" value="d">Desperate
+<input type="radio" name="mood" id="m5" value="s">Suprised
+<input type="radio" name="mood" id="m6" value="c">Curious
+</form>
+</div>
+
+<div id="hccontent">
+<a id="agd"></a>
+<h3 class="hor">Attorney-General's Department</h3>
+<img alt="agd" class="content" src="images/agd.jpg" title="Attorney-General's Department"/>
+<p>The Attorney-General's Department is an Australian Government Department. Its role is to serve the people of Australia by providing essential expert support to the Government in the maintenance and improvement of Australia's system of law and justice. It is also the central policy and co-coordinating element of the Attorney-General's portfolio for which the Attorney-General and Minister for Home Affairs are responsible.</p>
+<button type="button" id="rate" onclick="show()" class="r">Rate</button>
+<p class="control"><a class="contact" href="#top">[go back]</a></p>
+<a id="aff"></a>
+<h3 class="hor">Department of Agriculture, Fisheries and Forestry</h3>
+<img alt="aff" class="content" src="images/aff.jpg" title="Department of Agriculture, Fisheries and Forestry"/>
+<p>The Australian Department of Agriculture, Fisheries and Forestry's role is to develop and implement policies and programs that ensure Australia's agricultural, fisheries, food and forestry industries remain competitive, profitable and sustainable.</p>
+<a id="bcde"></a>
+<h3 class="hor">Department of Broadband, Communications and the Digital Economy</h3>
+<img alt="bcde" class="content" src="images/bcde.jpg" title="Digital Economy"/>
+<p>The department's strategic policy areas include:</p>
+<ol>
+<li>National Broadband Network</li>
+<li>Postal and telecommunications policies and programs</li>
+<li>Spectrum management</li>
+<li>Broadcasting policy</li>
+<li>Digital economy</li>
+<li>Regional communications</li>
+<li>Cybersafety and e-security</li>
+<li>Regulatory reform and convergence</li>
+<li>Digital television</li>
+</ol>
+<a id="ccee"></a>
+<h3 class="hor">Department of Climate Change and Energy Efficiency</h3>
+<img alt="ccee" class="content" src="images/ccee.jpg" title="Department of Climate Change and Energy Efficiency"/>
+<p>The Department of Climate Change and Energy Efficiency was an Australian Government department. Its role was to serve the people of Australia by developing a more prosperous and sustainable Australia by leading and coordinating the mitigation of greenhouse gas emissions, promotion of energy efficiency, adaptation to climate change and shaping of global solutions.</p>
+<a id="d"></a>
+<h3 class="hor">Department of Defence</h3>
+<img alt="d" class="content" src="images/d.jpg" title="Royal Australian Air Force"/>
+<p>The Australian Department of Defence is a Federal Government Department. It forms part of the Australian Defence Organisation (ADO) along with the Australian Defence Force (ADF). The Defence mission is to defend Australia and its national interests. It is accountable to the Commonwealth Parliament, on behalf of the Australian people, for the efficiency and effectiveness with which it carries out the Government's defence policy.</p>
+<a id="eewr"></a>
+<h3 class="hor">Department of Education, Employment and Workplace Relations</h3>
+<img alt="eewr" class="content" src="images/eewr.jpg" title="Department of Education, Employment and Workplace Relations"/>
+<p>The Department deals with:</p>
+<ol>
+<li>Primary and secondary-level education policy and programs</li>
+<li>Science awareness programs in schools</li>
+<li>Income support policies and programs for students and apprentices</li>
+<li>Employment policy, including employment services</li>
+<li>Job Services Australia</li>
+<li>Labour market and income support policies and programs for people of working age</li>
+<li>Workplace relations policy development, advocacy and implementation</li>
+<li>Promotion of flexible workplace relations policies and practices</li>
+<li>Co-ordination of labour market research</li>
+<li>Australian government employment workplace relations policy, including administration of the framework for agreement making and remuneration and conditions</li>
+<li>Occupational health and safety, rehabilitation and compensation</li>
+<li>Equal employment opportunity</li>
+<li>Work and family programs</li>
+<li>Services to help people with disabilities obtain employment, other than supported employment</li>
+<li>Youth affairs and programs, excluding income support policies and programs</li>
+<li>Early childhood and childcare policy and programs</li>
+</ol>
+<a id="fhcsia"></a>
+<h3 class="hor">Department of Families, Housing, Community Services and Indigenous Affairs</h3>
+<img alt="fhcsia" class="content" src="images/fhcsia.jpg" title="Department of Families, Housing, Community Services and Indigenous Affairs"/>
+<p>The Department of Families, Housing, Community Services and Indigenous Affairs (FaHCSIA) was an Australian Government department located in Greenway in Canberra. The department's role was to develop social policies and support affected Australian society and the living standards of Australian families. The Office of Indigenous Policy Coordination was a part of FaHCSIA.</p>
+<a id="fd"></a>
+<h3 class="hor">Department of Finance and Deregulation</h3>
+<img alt="fd" class="content" src="images/fd.jpg" title="Department of Finance and Deregulation"/>
+<p>The Australian Department of Finance and Deregulation is a Federal Government department. Its role is to help the Australian Government achieve its policy objectives by contributing to four key outcomes:</p>
+<ol>
+<li>Sustainable Government finances;</li>
+<li>More efficient Government operations;</li>
+<li>Efficiently functioning Parliament;</li>
+<li>Effective and efficient use of information and communication technology by the Australian Government.</li>
+</ol>
+<a id="fat"></a>
+<h3 class="hor">Department of Foreign Affairs and Trade</h3>
+<img alt="fat" class="content" src="images/fat.jpg" title="Department of Foreign Affairs and Trade"/>
+<p>The Department of Foreign Affairs and Trade (DFAT) is a department of the government of Australia charged with advancing the interests of Australia and its citizens internationally. It manages the Government's foreign relations and trade policies.</p>
+<a id="ha"></a>
+<h3 class="hor">Department of Health and Ageing</h3>
+<img alt="ha" class="content" src="images/ha.jpg" title="Department of Health and Ageing"/>
+<p>The Department of Health and Ageing (DoHA) is an Australian Government department. Its role is to oversee the running of Australia's health system, including supporting universal and affordable access to medical, pharmaceutical and hospital services, while helping people to stay healthy through health promotion and disease prevention activities.</p>
+<a id="hs"></a>
+<h3 class="hor">Department of Human Services</h3>
+<img alt="hs" class="content" src="images/hs.jpg" title="Department of Human Services"/>
+<p>The Department of Human Services (DHS) is an Australian Government agency which is responsible for delivering a range of welfare, public aid, health and other services for the Australian Government.</p>
+<a id="ic"></a>
+<h3 class="hor">Department of Immigration and Citizenship</h3>
+<img alt="ic" class="content" src="images/ic.jpg" title="Country Citizenship Ceremony"/>
+<p>The Department of Immigration and Border Protection (DIBP) is an Australian Government department. It is responsible for immigration arrangements and border control. For the 2010-11 financial year the department's operating budget was A$2.2 billion.</p>
+<p>As of September 2013, the Department is no longer responsible for settlement services for migrants and humanitarian entrants, being shifted to the newly formed Department of Social Services (formerly Department of Families, Housing, Community Services and Indigenous Affairs). The Australian Customs and Border Protection Service and associated policy has moved from the umbrella of the Attorney-General's portfolio to the Department of Immigration and Border Protection, a move intended to ensure stronger integration of border protection resources.</p>
+<a id="it"></a>
+<h3 class="hor">Department of Infrastructure and Transport</h3>
+<img alt="it" class="content" src="images/it.jpg" title="Department of Infrastructure and Transport"/>
+<p>The Department of Infrastructure and Transport was an Australian government department.[1] It was formed in September 2011, absorbing parts of the former Department of Infrastructure, Transport, Regional Development and Local Government. Regional development and local government functions were sent to the Department of Regional Australia, Regional Development and Local Government.[2] Following the 2013 federal election, the department was renamed on 18 September 2013 to become the Department of Infrastructure and Regional Development, regaining regional development and local government functions.</p>
+<a id="iisrte"></a>
+<h3 class="hor">Department of Industry, Innovation, Science, Research and Tertiary Education</h3>
+<img alt="iisrte" class="content" src="images/iisrte.jpg" title="Skills and Innovation"/>
+<p>The Department of Industry, Innovation, Climate Change, Science, Research and Tertiary Education (DIICSRTE) was a department of the Australian Government charged with further developing growth in Australian industries and advancements in science and research.</p>
+<p>The department was abolished by the Abbott Government on 18 September 2013 and its functions were principally transferred to the Department of Industry; with its environmental functions transferred to the Department of the Environment.</p>
+<a id="ralgas"></a>
+<h3 class="hor">Department of Regional Australia, Local Government, Arts and Sport</h3>
+<img alt="ralgas" class="content" src="images/ralgas.jpg" title="Regional Australia"/>
+<p>The Department of Regional Australia, Local Government, Arts and Sport was an Australian government department.It was formed in December 2011, absorbing the former Department of Regional Australia, Regional Development and Local Government along with Arts and Sport functions from the Department of the Prime Minister and Cabinet.The department was abolished in September 2013 with its functions moved to other Australian Government departments.</p>
+<a id="ret"></a>
+<h3 class="hor">Department of Resources, Energy and Tourism</h3>
+<img alt="ret" class="content" src="images/ret.jpg" title="Adelaide Town Hall on New Years Eve"/>
+<p>The Department of Resources, Energy and Tourism is an Australian Government department. It deals with:</p>
+<ol>
+<li>Energy policy</li>
+<li>Mineral and energy industries, including oil and gas, and electricity</li>
+<li>National energy market</li>
+<li>Energy-specific international organisations and activities</li>
+<li>Administration of export controls on rough diamonds, uranium and thorium</li>
+<li>Minerals and energy resources research, science and technology</li>
+<li>Tourism industry</li>
+<li>Geoscience research and information services including geodesy, mapping, remote sensing and land information co-ordination</li>
+<li>Radioactive waste management</li>
+<li>Renewable energy technology development</li>
+<li>Clean fossil fuel energy</li>
+<li>Industrial energy efficiency</li>
+</ol>
+<a id="sewpc"></a>
+<h3 class="hor">Department of Sustainability, Environment, Water, Population and Communities</h3>
+<img alt="sewpc" class="content" src="images/sewpc.jpg" title="Ayers Rock"/>
+<p>The stated aims of the department are to achieve the following: protection and conservation of the environment; to ensure that Australia benefits from meteorological and related sciences and services; and to see that Australia's interests in Antarctica are advanced. The Australian Government Department of Sustainability, Environment, Water, Population and Communities develops and implements national policy, programs and legislation to protect and conserve Australia's environment and heritage.</p>
+<a id="pmc"></a>
+<h3 class="hor">Department of the Prime Minister and Cabinet</h3>
+<img alt="pmc" class="content" src="images/pmc.jpg" title="Department of the Prime Minister and Cabinet"/>
+<p>The Department of the Prime Minister and Cabinet (PM&amp;C) is an Australian Government department. The Department was first established in 1911 (it was then known as the Prime Minister's Department; the later title was created in 1971). Its role is to ensure that policy proposals put to the Prime Minister and to Cabinet are developed in a coherent, informed and coordinated fashion, to co-ordinate the implementation of key government programmes, to support official visits, ceremonies and state occasions and, to manage the operations of the official residences. The responsibilities of the Department are considerably wider than in most other Westminster systems, although the Department of the Prime Minister and Cabinet in New Zealand has similar responsibilities.</p>
+<a id="va"></a>
+<h3 class="hor">Department of Veterans' Affairs</h3>
+<img alt="va" class="content" src="images/va.jpg" title="Australian Army Veterans"/>
+<p>The Department of Veterans' Affairs is an Australian Government department established in October 1976. The Department is part of the Defence Portfolio.The department controls the following agencies:</p>
+<ol>
+<li>Australian War Memorial</li>
+<li>Office of Australian War Graves</li>
+<li>Repatriation Commission</li>
+<li>Vietnam Veterans' Counselling Service</li>
+</ol>
+<a id="t"></a>
+<h3 class="hor">Department of The Treasury</h3>
+<img alt="t" class="content" src="images/t.jpg" title="Department of The Treasury"/>
+<p>The Department of the Treasury is an Australian Government department. Its role is to develop economic policy and prepare the Australian federal budget. The department is headed by the Treasurer of Australia, Joe Hockey MP. The current Assistant Treasurer is Senator Arthur Sinodinos. The Minister for Small Business, Bruce Billson MP is within the Treasury portfolio.</p>
+<h3 class="hor">Site Map</h3>
+<h4 class="hor">Click the contents to go to the corresponding pages</h4>
+<img id="sitemap" src="images/constitution.gif" usemap="#map" alt="Constitution" title="Please wait..."/>
+<map name="map">
+<area alt="House of Representatives" shape="rect" coords="0,210,140,320" title="House of Representatives" href="HOR.htm" onclick="window.parent.HORchange()"/>
+<area alt="Senate" shape="rect" coords="140,210,285,320" title="Senate" href="S.htm" onclick="window.parent.Schange()"/>
+<area alt="High Cournt" shape="rect" coords="482,185,594,232" title="High Cournt" href="HC.htm" onclick="window.parent.HCchange()"/>
+<area alt="Executive Government" shape="rect" coords="171,347,504,385" title="Executive Government" href="EG.htm" onclick="window.parent.EGchange()"/>
+<area alt="Home Page" shape="rect" coords="143,0,531,54" title="Home Page" href="C.htm" onclick="window.parent.Cchange()"/>
+</map>
+</div>
+
+<div id="copyright">
+<p>If you have any further question or you found the content on this page inappropriate,please feel free to <a class="contact" href="mailto:131306105@polytechnicwest.wa.edu.au">contact Man Fu Lei.</a> Contents on this page are all from the Internet which can be copied and used unlimitedly. No right is reserved.</p>
+</div>
+
+</body>
+</html>

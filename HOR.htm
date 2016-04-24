@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>House of Representative of Australia</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" />
+</head>
+<body class="HOR" onload="hide()">
+
+<div id="header">
+<a href="#sitemap" title="Site Map"><img alt="HORlogo" id="top" src="images/HORlogo.jpg" class="logo" title="Site Map"></a><h1>&nbsp;&nbsp;&nbsp;HOUSE of REPRESENTATIVES of AUSTRALIA</h1>
+</div>
+
+<div id="menu">
+<ul>
+<li class="menu"><h4><a href="C.htm" onclick="window.parent.Cchange()">Constitution</a></h4></li>
+<li class="menu"><h4><a href="S.htm" onclick="window.parent.Schange()">Senate</a></h4></li>
+<li class="dmenu"><h4><a href="EG.htm" onclick="window.parent.EGchange()">Executive<br/> Government</a></h4></li>
+<li class="menu"><h4><a href="HC.htm" onclick="window.parent.HCchange()">High Court</a></h4></li>
+<li class="menu"><h4><a href="#sitemap">Site Map</a></h4></li>
+<li class="menu"><h4><a href="mailto:131306105@polytechnicwest.wa.edu.au">Contact Me</a></h4></li>
+</ul>
+</div>
+
+<div id="link">
+<ul>
+<li class="horheadline"><a class="list" title="Introduction" href="#introduction">Introduction</a></li>
+<li class="horheadline"><a class="list" title="Composition" href="#composition">Composition</a></li>
+<li class="horheadline"><a class="list" title="Functions" href="#functions">Functions</a>
+<ol>
+<li class="horsub"><a class="list" title="Makes Laws" href="#ml">Makes Laws</a></li>
+<li class="horsub"><a class="list" title="Determines the Government" href="#dg">Determines the Government</a></li>
+<li class="horsub"><a class="list" title="Publicises and Scrutinises Government Administration" href="#psga">Publicises and Scrutinises Government Administration</a></li>
+<li class="horsub"><a class="list" title="Represents the People" href="#rp">Represents the People</a></li>
+<li class="horsub"><a class="list" title="Controls Government Expenditure" href="#cge">Controls Government Expenditure</a></li>
+</ol>
+</li>
+<li class="horheadline"><a class="list" title="Sittings" href="#sittings">Sittings</a>
+<li class="horheadline"><a class="list" title="Committees" href="#committees">Committees</a>
+<ol>
+<li class="horsub"><a class="list" title="Investigative Committees" href="#ic">Investigate Committees</a></li>
+<li class="horsub"><a class="list" title="Domestic or Internal Committees" href="#dic">Domestic or Internal Committees</a></li>
+</ol>
+</li>
+<li class="horheadline"><a class="list" title="The Chamber" href="#chamber">The Chamber</a></li>
+<li class="horheadline"><a class="list" title="The Federation Chamber" href="#fc">The Federation Chamber</a></li>
+<li class="horheadline"><a class="list" title="The Speaker" href="#speaker">The Speaker</a></li>
+<li class="horheadline"><a class="list" title="Inter-Parliamentary Relations" href="#ipr">Inter-Parliamentary Relations</a></li>
+<li class="horheadline"><a class="list" title="Statistical Digest" href="#sd">Statistical Digest</a></li>
+</ul>
+<div id="music">
+<audio id="hor" src="music/pal31.mp3" controls autoplay>Your browser does not support HTML5 video.</audio>
+<script>
+myVid=document.getElementById("hor");
+myVid.volume=0.5;
+function no(){
+if(document.getElementById("l1").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else if(document.getElementById("l2").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else if(document.getElementById("l3").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else alert("Please choose one");
+
+}
+function ok(){
+if(document.getElementById("m1").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m2").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m3").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m4").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m5").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m6").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+if(document.getElementById("submit").disabled){
+document.getElementById("yes").style.visibility="hidden";
+}
+else{
+alert("Please choose one");
+}
+}
+function show(){
+//document.getElementById("submit").disabled=false;
+document.getElementById("yes").style.visibility="visible";
+document.getElementById("rate").style.visibility="hidden";
+}
+function hide(){
+document.getElementById("yes").style.visibility="hidden";
+}
+</script>
+</div>
+</div>
+
+<div id="yes">
+<p>&nbsp;&nbsp;&nbsp;You really&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" id="submit1" onclick="no()">submit</button>
+</p>
+<form>
+<input type="radio" name="like" id="l1" value="cl">Like this page crazily<br>
+<input type="radio" name="like" id="l2" value="al">Like this page absolutely<br>
+<input type="radio" name="like" id="l3" value="vl">Like this page very much
+</form>
+<p>&nbsp;&nbsp;&nbsp;Your are&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" id="submit" onclick="ok()">submit</button>
+</p>
+<form>
+<input type="radio" name="mood" id="m1" value="h">Happy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="mood" id="m2" value="a">Angry&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="mood" id="m3" value="s">Smiling<br>
+<input type="radio" name="mood" id="m4" value="d">Desperate
+<input type="radio" name="mood" id="m5" value="s">Suprised
+<input type="radio" name="mood" id="m6" value="c">Curious
+</form>
+</div>
+
+<div id="content">
+<a id="introduction"></a>
+<h3 class="hor">Introduction</h3>
+<img alt="HouseOfRepresentatives" class="content" src="images/HouseOfRepresentatives.jpg" title="House of Representatives"/>
+<p>The House of Representatives is one of the two houses of Australia's Commonwealth Parliament. There are 150 representatives elected by the Australian people. The House of Representatives is the house in which government is formed.</p>
+<p>The 43rd Parliament was prorogued and the House of Representatives was dissolved on 5 August 2013. After the Parliament is prorogued, bills and other business before the House of Representatives lapse and will need to be reintroduced in the next Parliament.</p>
+<button type="button" id="rate" onclick="show()" class="r">Rate</button>
+<p class="control"><a class="contact" href="#top">[go back]</a></p>
+<a id="composition"></a>
+<h3 class="hor">Composition</h3>
+<img alt="MembersOftheHouse" class="content" src="images/MembersOftheHouse.jpg" title="Members of the House of Representatives"/>
+<p>The House has 150 Members. Each Member represents an electoral division. The boundaries of these electorates are adjusted from time to time so that they all contain approximately equal numbers of electors-because of the distribution of Australia's population they vary greatly in area (from a few square kilometres to over two million square kilometres). Members are elected by a system known as preferential voting, under which voters rank candidates in order of preference.</p>
+<p>Each House of Representatives may continue for up to three years, after which general elections for a new House must be held. Elections are often held before the end of this period.</p>
+<p>The main political parties represented in the House are the Australian Labor Party, the Liberal Party of Australia and the National Party of Australia. In recent years there has also been a number of independent parties and Members.</p>
+<a id="functions"></a>
+<h3 class="hor">Functions</h3>
+<a id="ml"></a>
+<h4 class="hor">Makes Laws</h4>
+<img alt="AustraliaAct" class="content" src="images/AustraliaAct.jpg" title="Australian Law"/>
+<p>The House's central function and the one which takes up most of its time is the consideration and passing of new laws and amendments or changes to existing laws. Any Member can introduce a proposed law (bill) but most are introduced by the Government. To become law, bills must be passed by both the House of Representatives and the Senate. They may start in either house but the majority of bills are introduced in the House of Representatives.</p>
+<a id="dg"></a>
+<h4 class="hor">Determines the Government</h4>
+<p>After an election the political party (or coalition of parties) which has the most Members in the House of Representatives becomes the governing party. Its leader becomes Prime Minister and other Ministers are appointed from among the party's Members and Senators. To remain in office a Government must keep the support of a majority of Members of the House.</p>
+<a id="psga"></a>
+<h4 class="hor">Publicises and Scrutinises Government Administration</h4>
+<img alt="RaisingHand" class="content" src="images/RaisingHand.jpg" title="Through the chair"/>
+<p>Debate of legislation and ministerial policy statements, discussion of matters of public importance, committee investigations, asking questions of Ministers (during question time-at 2 pm-Members may ask Ministers questions without notice on matters relating to their work and responsibilities; questions can also be asked on notice for written answer).</p>
+<a id="rp"></a>
+<h4 class="hor">Represents the People</h4>
+<p>Members may present petitions from citizens and raise citizens' concerns and grievances in debate. Members also raise issues of concern with Ministers and government departments.</p>
+<a id="cge"></a>
+<h4 class="hor">Controls Government Expenditure</h4>
+<img alt="100" class="content" src="images/100.jpg" title="Money"/>
+<p>The Government cannot collect taxes or spend money unless allowed by law through the passage of taxation and appropriation bills. Expenditure is also examined by parliamentary committees.</p>
+<a id="sittings"></a>
+<h3 class="hor">Sittings</h3>
+<img alt="HORSittings" class="content" src="images/HORSitting.jpg" title="Sittings"/>
+<p>The normal sitting pattern for the House extends from February to March, May to June and August to December. During these periods the House usually meets in blocks of two sitting weeks followed by two non-sitting weeks. Normally the House sits from Monday to Thursday each sitting week.</p>
+<p>The order of business for each sitting is set down by the rules of the House (the House of Representatives Standing and Sessional Orders). </p>
+<a id="committees"></a>
+<h3 class="hor">Committees</h3>
+<a id="ic"></a>
+<h4 class="hor">Investigative Committees</h4>
+<img alt="protest" class="content" src="images/protest.jpg" title="Public Opinion"/>
+<p>These committees carry out inquiries on matters of public policy or government administration. They take evidence from the public and report to the House with recommendations for government action. The system of general purpose standing committees parallels the functions of government, for example, Aboriginal and Torres Strait Islander Affairs; Economics, Finance and Public Administration; Education and Vocational Training.</p>
+<a id="dic"></a>
+<h4 class="hor">Domestic or Internal Committees</h4>
+<p>These committees are concerned with the operation of the House, for example, Procedure, Privileges, Members' Interests.</p>
+<a id="chamber"></a>
+<h3 class="hor">The Chamber</h3>
+<img alt="chamber" class="content" src="images/chamber.jpg" title="Chamber"/>
+<p>At the centre is the Speaker's Chair and the Table of the House. The two Clerks at the Table advise the Chair and Members about procedure and record the formal minutes of proceedings. Hansard reporters sit at the small central table to record the debates. Each Member has his or her own seat, with government Members to the right of the Speaker and opposition and other non-government Members to the left. Ministers and senior opposition Members (the shadow ministry) sit on the facing front benches and speak from the Table, other Members speak from their places.</p>
+<p>With the exception of question time, Members are rarely all present in the Chamber at the same time, but are engaged in work elsewhere, including participating in committee meetings and debates in the Main Committee. Members can watch what is happening in the Chamber at all times from their offices through the Parliament House internal television system.</p>
+<a id="fc"></a>
+<h3 class="hor">The Federation Chamber</h3>
+<p>The Federation Chamber provides an additional forum for the second reading and consideration in detail stages of bills and debate of committee reports and papers presented to the House. One of the House of Representatives committee rooms is dedicated to this function and fitted out as a small-scale Chamber. Its proceedings are also open to the public.</p>
+<a id="speaker"></a>
+<h3 class="hor">The Speaker</h3>
+<img alt="SpeakerChair" class="content" src="images/SpeakerChair.jpg" title="Speaker's Chair"/>
+<p>The first action of the House following an election is to elect one of its Members to be Speaker. The Speaker presides over the sittings of the House and is responsible for its administration. The Deputy Speaker and Second Deputy Speaker are also elected. A panel of other Members, appointed by the Speaker, provides assistance in presiding over the House and the Main Committee. When in the Chair these Members are referred to as 'Deputy Speaker'.</p>
+<a id="ipr"></a>
+<h3 class="hor">Inter-Parliamentary Relations</h3>
+<img alt="flags" class="content" src="images/flags.jpg" title="International Relation"/>
+<p>The International and Community Relations Office (ICRO) provides advice and support relevant to the conduct of the Parliaments international and regional affairs. It provides general support for inter-parliamentary conferences and incoming and outgoing parliamentary delegations; training support for other parliaments, particularly the smaller parliaments in our region; and advice to the Presiding Officers and members on international parliamentary matters.</p>
+<a id="sd"></a>
+<h3 class="hor">Statistical Digest</h3>
+<p class="caption">No.31 43rd Parliament up to June 2013</p>
+<table class="hor">
+<tr><th colspan="3">Type</th><th>Quantity(2013 to date)</th></tr>
+<tr><td rowspan="6">Legislation</td><td rowspan="4">Bills presented to House</td><td>Government bills</td><td>132</td></tr>
+<tr><td class="horstagger">Private Members' bills</td><td class="horstagger">20</td></tr>
+<tr><td>Senate bills</td><td>4</td></tr>
+<tr><td class="horstagger">Total</td><td class="horstagger">156</td></tr>
+<tr><td colspan="2" class="horstagger">Bills referred to the Federation Chamber</td><td class="horstagger">77</td></tr>
+<tr><td colspan="2">Bills passed by the House</td><td>146</td></tr>
+<tr><td rowspan="9">Other Business</td><td colspan="2" class="horstagger">Number of sitting days</td><td class="horstagger">33</td></tr>
+<tr><td rowspan="2">Discussion</td><td>Private Members' motions moved and debated</td><td>42</td></tr>
+<tr><td class="horstagger">Matters of public importance discussed</td><td class="horstagger">25</td></tr>
+<tr><td rowspan="2" class="horstagger">Questions</td><td>Questions in writing</td><td>201</td></tr>
+<tr><td class="horstagger">Questions without notice</td><td class="horstagger">540</td></tr>
+<tr><td rowspan="2">Petitions</td><td>Petitions presented</td><td>78</td></tr>
+<tr><td class="horstagger">Signatures to petitions</td><td class="horstagger">203,562</td></tr>
+<tr><td colspan="2">Divisions</td><td>80</td></tr>
+<tr><td colspan="2" class="horstagger">Parliamentary committee reports presented</td><td class="horstagger">121</td></tr>
+</table>
+<h3>Site Map</h3>
+<h4>Click the contents to go to the corresponding pages</h4>
+<img id="sitemap" src="images/constitution.gif" usemap="#map" alt="Constitution" title="Please wait..."/>
+<map name="map">
+<area alt="House of Representatives" shape="rect" coords="0,210,140,320" title="House of Representatives" href="HOR.htm" onclick="window.parent.HORchange()"/>
+<area alt="Senate" shape="rect" coords="140,210,285,320" title="Senate" href="S.htm" onclick="window.parent.Schange()"/>
+<area alt="High Cournt" shape="rect" coords="482,185,594,232" title="High Cournt" href="HC.htm" onclick="window.parent.HCchange()"/>
+<area alt="Executive Government" shape="rect" coords="171,347,504,385" title="Executive Government" href="EG.htm" onclick="window.parent.EGchange()"/>
+<area alt="Home Page" shape="rect" coords="143,0,531,54" title="Home Page" href="C.htm" onclick="window.parent.Cchange()"/>
+</map>
+</div>
+
+<div id="copyright">
+<p>If you have any further question or you found the content on this page inappropriate,please feel free to <a class="contact" href="mailto:131306105@polytechnicwest.wa.edu.au">contact Man Fu Lei.</a> Contents on this page are all from the Internet which can be copied and used unlimitedly. No right is reserved.</p>
+</div>
+
+</body>
+</html>

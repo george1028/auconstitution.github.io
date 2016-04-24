@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Senate</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css"/>
+</head>
+<body class="s" onload="hide()">
+
+<div id="header">
+<a href="#sitemap" title="Site Map"><img alt="Slogo" id="top" src="images/Slogo.jpg" class="logo" title="Site Map"></a><h1>&nbsp;&nbsp;&nbsp;SENATE of AUSTRALIA</h1>
+</div>
+
+<div id="menu">
+<ul>
+<li class="menu"><h4><a href="C.htm" onclick="window.parent.Cchange()">Constitution</a></h4></li>
+<li class="dmenu"><h4><a href="HOR.htm" onclick="window.parent.HORchange()">House of <br/>Representatives</a></h4></li>
+<li class="dmenu"><h4><a href="EG.htm" onclick="window.parent.EGchange()">Executive <br/>Government</a></h4></li>
+<li class="menu"><h4><a href="HC.htm" onclick="window.parent.HCchange()">High Court</a></h4></li>
+<li class="menu"><h4><a href="#sitemap">Site Map</a></h4></li>
+<li class="menu"><h4><a href="mailto:131306105@polytechnicwest.wa.edu.au">Contact Me</a></h4></li>
+</ul>
+</div>
+<div id="link">
+<ul>
+<li class="sheadline"><a class="list" title="Introduction" href="#introduction">Introduction</a></li>
+<li class="sheadline"><a class="list" title="Powers" href="#powers">Powers</a></li>
+<li class="sheadline"><a class="list" title="Composition" href="#composition">Composition</a></li>
+<li class="sheadline"><a class="list" title="Role" href="#role">Role</a></li>
+<li class="sheadline"><a class="list" title="The Senate Chamber" href="#chamber">The Senate Chamber</a>
+<ol>
+<li class="horsub"><a class="list" title="Seating Arrangements" href="#sa">Seating Arrangements</a></li>
+<li class="horsub"><a class="list" title="Quorum" href="#quorum">Quorum</a></li>
+</ol>
+</li>
+<li class="sheadline"><a class="list" title="Senator's Work" href="#work">Senator's Work</a>
+<ol>
+<li class="horsub"><a class="list" title="Keeping Informed and in Touch" href="#kit">Keeping Informed and in Touch</a></li>
+<li class="horsub"><a class="list" title="Debating Ideas and Policies" href="#dip">Debating Ideas and Policies</a></li>
+</ol>
+</li>
+<li class="sheadline"><a class="list" title="Senate Committees" href="#sc">Senate Committees</a>
+<ol>
+<li class="horsub"><a class="list" title="Domestic Committees" href="#dc">Domestic Committees</a></li>
+<li class="horsub"><a class="list" title="Legislative Scrutiny Committees" href="#lsc">Legislative Scrutiny Committees</a></li>
+<li class="horsub"><a class="list" title="Legislative and General Purpose Standing Committees" href="#lgpsc">Legislative and General Purpose Standing Committees</a></li>
+</ol>
+</li>
+<li class="sheadline"><a class="list" title="Legislation Statics" href="#ls">Legislation Statics</a></li>
+</ul>
+<div id="music">
+<audio id="index" src="music/pal32.mp3" controls autoplay>Your browser does not support HTML5 video.</audio><script>
+myVid=document.getElementById("index");
+myVid.volume=0.9;
+function no(){
+if(document.getElementById("l1").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else if(document.getElementById("l2").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else if(document.getElementById("l3").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else alert("Please choose one");
+
+}
+function ok(){
+if(document.getElementById("m1").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m2").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m3").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m4").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m5").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m6").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+if(document.getElementById("submit").disabled){
+document.getElementById("yes").style.visibility="hidden";
+}
+else{
+alert("Please choose one");
+}
+}
+function show(){
+//document.getElementById("submit").disabled=false;
+document.getElementById("yes").style.visibility="visible";
+document.getElementById("rate").style.visibility="hidden";
+}
+function hide(){
+document.getElementById("yes").style.visibility="hidden";
+}
+</script>
+</div>
+</div>
+
+<div id="yes">
+<p>&nbsp;&nbsp;&nbsp;You really&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" id="submit1" onclick="no()">submit</button>
+</p>
+<form>
+<input type="radio" name="like" id="l1" value="cl">Like this page crazily<br>
+<input type="radio" name="like" id="l2" value="al">Like this page absolutely<br>
+<input type="radio" name="like" id="l3" value="vl">Like this page very much
+</form>
+<p>&nbsp;&nbsp;&nbsp;Your are&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" id="submit" onclick="ok()">submit</button>
+</p>
+<form>
+<input type="radio" name="mood" id="m1" value="h">Happy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="mood" id="m2" value="a">Angry&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="mood" id="m3" value="s">Smiling<br>
+<input type="radio" name="mood" id="m4" value="d">Desperate
+<input type="radio" name="mood" id="m5" value="s">Suprised
+<input type="radio" name="mood" id="m6" value="c">Curious
+</form>
+</div>
+
+<div id="content">
+<div id="scontent1">
+<a id="introduction"></a>
+<h3 class="hor">Introduction</h3>
+<img alt="AustralianSenate" class="content" src="images/AustralianSenate.jpg" title="Australian Senate"/>
+<p>The Senate is one of the two houses of the Australian Federal Parliament. It consists of 76 senators, twelve from each of the six states and two from each of the mainland territories. It shares the power to make laws with the other House of the Parliament, the House of Representatives.</p>
+<button type="button" id="rate" onclick="show()" class="r">Rate</button>
+<p class="control"><a class="contact" href="#top">[go back]</a></p>
+<a id="powers"></a>
+<h3 class="hor">Powers</h3>
+<img alt="powers" class="content" src="images/powers.jpg" title="Powers"/>
+<p>The powers of the two houses of the Commonwealth Parliament, the Senate and the House of Representatives, are defined by the Australian Constitution. All proposed laws (bills) must be passed by both houses. The Senate's law-making powers are equal to those of the House of Representatives except that it cannot introduce or amend proposed laws that authorise expenditure for the ordinary annual services of the government or that impose taxation. The Senate can, however, request that the House of Representatives make amendments to financial legislation and it can refuse to pass any bill.</p>
+<a id="composition"></a>
+<h3 class="hor">Composition</h3>
+<img alt="SenateCom" class="content" src="images/SenateCom.jpg" title="Senate Composition"/>
+<p>Under the Constitution, each state of the Australian federation, regardless of its population, has an equal number of senators. The Senate currently consists of 76 senators. Twelve senators represent each of the six states, elected for a period of six years. A system of rotation, however, ensures that half the Senate retires every three years. The four senators who represent the Australian Capital Territory and the Northern Territory are elected concurrently with members of the House of Representatives and the duration of their terms of office coincide with those for that House (a maximum of three years).</p>
+<p>The Senate is elected by a system of proportional representation which ensures that the composition of the Senate more accurately reflects the votes of the electors than the method used to elect members of the House of Representatives.</p>
+<a id="role"></a>
+<h3 class="hor">Role</h3>
+<img alt="scale" class="content" src="images/scale.jpg" title="Role"/>
+<p>The Senate is a house of review and a powerful check on the government of the day. The proportional representation system of voting used to elect senators makes it easier for independents and the candidates of the smaller parties to be elected. In recent decades this has meant that the government party usually does not have a majority of votes in the Senate and the non-government senators are able to use their combined voting power to reject or amend government legislation. The Senate's large and active committee system also enables senators to inquire into policy issues in depth and to scrutinise the way laws and policies are administered by ministers and public servants.</p>
+<a id="chamber"></a>
+<h3 class="hor">The Senate Chamber</h3>
+</div>
+<div id="scontent2">
+<img alt="SenateSeat" class="scontent2" src="images/SenateSeat.jpg" title="Senate Seating"/>
+</div>
+<div id="scontent3">
+<dl>
+<dt>1.&nbsp;&nbsp;&nbsp;The President</dt>
+<dd>After each Senate election the senators elect one of their number to preside over their proceedings.</dd>
+<dt>2.&nbsp;&nbsp;&nbsp;Deputy President and Chairman of &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Committees</dt>
+<dd>When a bill (a proposed law) is being considered in detail the Senate resolves itself into a committee of the whole. At this point the President leaves the chair and the Chairman of Committees, who is also the Deputy President, presides over the Chamber from the chair between the two Clerks at the table. The Deputy President also presides over the Chamber from the President's chair in the absence of the President.</dd>
+<dt>3.&nbsp;&nbsp;&nbsp;Leader of the Government in the Senate</dt>
+<dt>4.&nbsp;&nbsp;&nbsp;Leader of the Opposition in the Senate</dt>
+<dt>5.&nbsp;&nbsp;&nbsp;Party Whips</dt>
+<dd>Each party has its own Whip who is responsible for arranging for members of their party to take part in debates and for ensuring their attendance in the Chamber when a vote is to be taken. The Whips meet together regularly to arrange the order of business in the Senate.</dd>
+</dl>
+</div>
+<div id="scontent4">
+<dl>
+<dt>6.&nbsp;&nbsp;&nbsp;&nbsp;The Clerks</dt>
+<dd>The Clerks at the Table are senior officers of the Department of the Senate trained in parliamentary procedure. They record the proceedings of the Senate and advise the President and senators on procedure.</dd>
+<dt>7.&nbsp;&nbsp;&nbsp;Hansard editors</dt>
+<dd>Debates in the Senate are recorded on digital audio and digital tape. The Hansard transcript is prepared by editors, who use voice recognition software, typing or a stenotype machine to input the text.</dd>
+<dt>8.&nbsp;&nbsp;&nbsp;Advisers' benches</dt>
+<dd>These seats are for Senators' staff, and advisers to ministers.</dd>
+<dt>9.&nbsp;&nbsp;&nbsp;Usher of the Black Rod</dt>
+<dd>The Usher of the Black Rod is a parliamentary officer with a number of ceremonial and official duties including escorting the President into the Chamber at the beginning of each sitting day, delivering messages from the Senate to the House of Representatives and assisting with keeping order in the Senate.</dd>
+</dl>
+<a id="sa"></a>
+<h4 class="hor">Seating Arrangements</h4>
+<p>To the President's right sit the senators who belong to the government party (or coalition of parties) and to the left sit the senators who form the official opposition. Minority parties and independent senators sit on the 'cross benches' between the government and opposition.</p>
+<p>The Leader of the Government in the Senate and the Leader of the Opposition in the Senate sit at the table in the centre of the Chamber. On the front benches behind their respective leaders are the government ministers and the opposition spokespersons or shadow ministers.</p>
+<a id="quorum"></a>
+<h4 class="hor">Quorum</h4>
+<img alt="quorum" class="content" src="images/quorum.jpg" title="Quorum"/>
+<p>Not all senators are required to be in the Chamber when the Senate is sitting. The quorum is nineteen and debate frequently proceeds with fewer senators present. There are many demands on senators' time and from their offices they can follow the proceedings in the Chamber on radio and television. When senators are required in the Chamber to form a quorum they are summoned by the ringing of the bells.</p>
+<a id="work"></a>
+<h3 class="hor">Senator's Work</h3>
+<p>The Senate Chamber is the principal focus of a senator's work. It is here that he or she debates and votes on matters that are before Parliament. However, the activities that a senator undertakes in the Senate Chamber are only the tip of a very large iceberg of work. </p>
+<a id="kit"></a>
+<h4 class="hor">Keeping Informed and in Touch with the Community Views</h4>
+<img alt="community" class="content" src="images/community.jpg" title="Community"/>
+<p>Senators play a vital role in the communication chain which links individual citizens, community and industry groups, political parties, parliament and government. To participate fully in the process of making new laws and debating public policy, senators need to be well informed. And in order to be effective representatives, senators must understand the opinions, needs and problems of the people of their state or territory. </p>
+<a id="dip"></a>
+<h4 class="hor">Debating Ideas and Policies</h4>
+<p>Senators contribute to public debate by putting forward their own ideas, by advocating the policies of their party and by representing the views of community groups. In addition to speeches and questions in the Senate Chamber, senators make use of a variety of occasions to contribute to the discussion of public issues.</p>
+<a id="sc"></a>
+<h3 class="hor">Senate Committees</h3>
+<img alt="committee" class="content" src="images/committee.jpg" title="Committee"/>
+<p>The Senate's role as a house of review and as a watchdog of the executive branch of government has led to the development of a comprehensive range of committees which may investigate matters of public policy and scrutinise proposed legislation and the details of government expenditure and administration. Most senators are actively involved in the work of three or four of these committees. </p>
+<p>Senate committees fall into two categories-Select and Standing:</p>
+<dl>
+<dt>Select Committee</dt>
+<dd>A select committee is one appointed by the Senate to inquire into some specific matter and to report back to the Senate within a set time. Once a select committee has submitted its final report to the Senate its work is done and it ceases to exist. </dd>
+<dt>Standing Committee</dt>
+<dd>A standing committee is a permanent committee of the Senate. It stands-or remains-for the life of the whole of any one Parliament, its members being appointed at the commencement of each Parliament. </dd>
+</dl>
+<p>There are three groups of standing committees:</p>
+<a id="dc"></a>
+<h4 class="hor">Domestic Committees</h4>
+<p>These committees deal with matters relating to the internal operations of the Senate, including publications, appropriations and staffing, procedure, privileges, library services, the provision of facilities in Parliament House and senators' pecuniary and other interests.</p>
+<a id="lsc"></a>
+<h4 class="hor">Legislative Scrutiny Committees</h4>
+<img alt="ScrutinizeLaw" class="content" src="images/ScrutinizeLaw.jpg" title="Scrutinizing Law"/>
+<p>All bills and subordinate legislative instruments that come before Parliament are scrutinised by either the Scrutiny of Bills Committee or the Regulations and Ordinances Committee to ensure that they conform to certain principles mainly concerned with personal rights and civil liberties. </p>
+<a id="lgpsc"></a>
+<h4 class="hor">Legislative and General Purpose Standing Committees</h4>
+<img alt="burn100" class="content" src="images/burn100.gif" title="Burning Money"/>
+<p>These committees examine legislation, government administration and public policy. The committees are divided along subject lines and cover between them all areas of government responsibility.</p>
+<p>In the Australian system of government, ministers and public servants are accountable to the Parliament for the use of the public resources with which they have been entrusted. Legislative and general purpose standing committees carry out the work of inquiring into and reporting on the twice-yearly estimates of proposed government expenditure. In addition, they have a specific mandate to monitor the performance of departments and agencies.  At the estimates hearings senators may directly question ministers and public officials not only about the details of proposed expenditure but also about the objectives, operations and efficiency of the programs for which they are responsible.</p>
+<a id="ls"></a>
+<h3 class="hor">Legislation Statics</h3>
+<p class="caption">Bills Considered by the Senate in the Period 1 January to 30 June 2013</p>
+<table class="s">
+<tr><th colspan="3">Type</th><th>Quantity</th></tr>
+<tr><td rowspan="8">Origin</td><td rowspan="3">On Senate or House of Representatives Notice Paper</td><td>Government bills(Received from House of Representatives)</td><td>10</td></tr>
+<tr><td class="horstagger">Private senators' bills(Originating in the Senate)</td><td class="horstagger">12</td></tr>
+<tr><td>Total</td><td>22</td></tr>
+<tr><td rowspan="3" class="horstagger">Introduced in the Senate</td><td class="horstagger">Government bills</td><td class="horstagger">3</td></tr>
+<tr><td>Private senator's bills</td><td>25</td></tr>
+<tr><td class="horstagger">Total</td><td class="horstagger">28</td></tr>
+<tr><td>Received from the House of Representatives</td><td>Government bills</td><td>142</td></tr>
+<tr><td colspan="2" class="horstagger">Total</td><td class="horstagger">192</td></tr>
+<tr><td rowspan="11">Outcome</td><td rowspan="3">Bills passed by both HOuses</td><td>Government bills</td><td>133</td></tr>
+<tr><td class="horstagger">Private senator's bill</td><td class="horstagger">1</td></tr>
+<tr><td>Total</td><td>134</td></tr>
+<tr><td colspan="2" class="horstagger">Private senator's bill passed by both Houses</td><td class="horstagger">1</td></tr>
+<tr><td colspan="2">Private senator's bill not yet introduced in the House of Representatives</td><td>1</td></tr>
+<tr><td rowspan="3" class="horstagger">Bills still before the Senate</td><td class="horstagger">Government bills</td><td class="horstagger">22</td></tr>
+<tr><td>Private senator's bills</td><td>27</td></tr>
+<tr><td class="horstagger">Total</td><td class="horstagger">49</td></tr>
+<tr><td>Bills negatived at second reading in the Senate</td><td>Private senators' bills</td><td>3</td></tr>
+<tr><td class="horstagger">Bills discharged from the Notice Paper</td><td class="horstagger">Private senator's bills</td><td class="horstagger">4</td></tr>
+<tr><td colspan="2">Total</td><td>192</td></tr>
+</table>
+<h3 class="hor">Site Map</h3>
+<h4 class="hor">Click the contents to go to the corresponding pages</h4>
+<img id="sitemap" src="images/constitution.gif" usemap="#map" alt="Constitution" title="Please wait..."/>
+<map name="map">
+<area alt="House of Representatives" shape="rect" coords="0,210,140,320" title="House of Representatives" href="HOR.htm" onclick="window.parent.HORchange()"/>
+<area alt="Senate" shape="rect" coords="140,210,285,320" title="Senate" href="S.htm" onclick="window.parent.Schange()"/>
+<area alt="High Cournt" shape="rect" coords="482,185,594,232" title="High Cournt" href="HC.htm" onclick="window.parent.HCchange()"/>
+<area alt="Executive Government" shape="rect" coords="171,347,504,385" title="Executive Government" href="EG.htm" onclick="window.parent.EGchange()"/>
+<area alt="Home Page" shape="rect" coords="143,0,531,54" title="Home Page" href="C.htm" onclick="window.parent.Cchange()"/>
+</map>
+</div>
+</div>
+
+<div id="copyright">
+<p>If you have any further question or you found the content on this page inappropriate,please feel free to <a class="contact" href="mailto:131306105@polytechnicwest.wa.edu.au">contact Man Fu Lei.</a> Contents on this page are all from the Internet which can be copied and used unlimitedly. No right is reserved.</p>
+</div>
+
+</body>
+</html>

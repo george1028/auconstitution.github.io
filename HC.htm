@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>High Court</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css"/>
+</head>
+<body class="hc" onload="hide()">
+
+<div id="header">
+<a href="#sitemap" title="Site Map"><img alt="HClogo" id="top" src="images/HClogo.jpg" class="logo" title="Site Map"></a><h1>&nbsp;&nbsp;&nbsp;HIGH COURT of AUSTRALIA</h1>
+</div>
+
+<div id="menu">
+<ul>
+<li class="menu"><h4><a href="C.htm" onclick="window.parent.Cchange()">Constitution</a></h4></li>
+<li class="dmenu"><h4><a href="HOR.htm" onclick="window.parent.HORchange()">House of <br/>Representatives</a></h4></li>
+<li class="dmenu"><h4><a href="EG.htm" onclick="window.parent.EGchange()">Executive <br/>Government</a></h4></li>
+<li class="menu"><h4><a href="S.htm" onclick="window.parent.Schange()">Senate</a></h4></li>
+<li class="menu"><h4><a href="#sitemap">Site Map</a></h4></li>
+<li class="menu"><h4><a href="mailto:131306105@polytechnicwest.wa.edu.au">Contact Me</a></h4></li>
+</ul>
+</div>
+
+<div id="link">
+<ul>
+<li class="sheadline"><a class="list" title="Role" href="#role">Role</a></li>
+<li class="sheadline"><a class="list" title="History" href="#history">History</a>
+<ol>
+<li class="horsub"><a class="list" title="Beginnings" href="#begin">Beginnings</a></li>
+<li class="horsub"><a class="list" title="The Great Depression and World War II" href="#gdww">The Great Depression and World War II</a></li>
+<li class="horsub"><a class="list" title="Developments in Later Years" href="#dly">Developments in Later Years</a></li>
+<li class="horsub"><a class="list" title="Accommodation" href="#accommodation">Accommodation</a></li>
+<li class="horsub"><a class="list" title="Sitting Practice" href="#sp">Sitting Practice</a></li>
+</ol>
+</li>
+<li class="sheadline"><a class="list" title="Operation" href="#operation">Operation</a></li>
+<li class="sheadline"><a class="list" title="The Building" href="#tb">The Building</a>
+<ol>
+<li class="horsub"><a class="list" title="Introduction" href="introduction">Introduction</a></li>
+<li class="horsub"><a class="list" title="Structural Features" href="#sf">Structural Features</a></li>
+<li class="horsub"><a class="list" title="Evolution of Construction" href="#ec">Evolution of Construction</a></li>
+<li class="horsub"><a class="list" title="The Public Hall" href="#tph">The Public Hall</a></li>
+<li class="horsub"><a class="list" title="Courtroom One" href="#c1">Courtroom One</a></li>
+<li class="horsub"><a class="list" title="Courtroom Two" href="#c2">Courtroom Two</a></li>
+<li class="horsub"><a class="list" title="Courtroom Three" href="#c3">Courtroom Three</a></li>
+</ol>
+</li>
+<li class="sheadline"><a class="list" title="2013 Judgement Statics" href="#statics">2013 Judgement Statics</a></li>
+</ul>
+<div id="music">
+<audio id="index" src="music/pal33.mp3" controls autoplay>Your browser does not support HTML5 video.</audio>
+<script>
+myVid=document.getElementById("index");
+myVid.volume=0.5;
+function no(){
+if(document.getElementById("l1").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else if(document.getElementById("l2").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else if(document.getElementById("l3").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else alert("Please choose one");
+
+}
+function ok(){
+if(document.getElementById("m1").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m2").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m3").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m4").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m5").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m6").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+if(document.getElementById("submit").disabled){
+document.getElementById("yes").style.visibility="hidden";
+}
+else{
+alert("Please choose one");
+}
+}
+function show(){
+//document.getElementById("submit").disabled=false;
+document.getElementById("yes").style.visibility="visible";
+document.getElementById("rate").style.visibility="hidden";
+}
+function hide(){
+document.getElementById("yes").style.visibility="hidden";
+}
+</script>
+</div>
+</div>
+
+<div id="yes">
+<p>&nbsp;&nbsp;&nbsp;You really&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" id="submit1" onclick="no()">submit</button>
+</p>
+<form>
+<input type="radio" name="like" id="l1" value="cl">Like this page crazily<br>
+<input type="radio" name="like" id="l2" value="al">Like this page absolutely<br>
+<input type="radio" name="like" id="l3" value="vl">Like this page very much
+</form>
+<p>&nbsp;&nbsp;&nbsp;Your are&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" id="submit" onclick="ok()">submit</button>
+</p>
+<form>
+<input type="radio" name="mood" id="m1" value="h">Happy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="mood" id="m2" value="a">Angry&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="mood" id="m3" value="s">Smiling<br>
+<input type="radio" name="mood" id="m4" value="d">Desperate
+<input type="radio" name="mood" id="m5" value="s">Suprised
+<input type="radio" name="mood" id="m6" value="c">Curious
+</form>
+</div>
+
+<div id="hccontent">
+<a id="role"></a>
+<h3 class="hor">Role</h3>
+<img alt="role" class="content" src="images/role.jpg" title="High Court"/>
+<p>The High Court is the highest court in the Australian judicial system. It was established in 1901 by Section 71 of the Constitution. The functions of the High Court are to interpret and apply the law of Australia; to decide cases of special federal significance including challenges to the constitutional validity of laws and to hear appeals, by special leave, from Federal, State and Territory courts.</p>
+<p>The seat of the High Court is in Canberra, where it is located in its own building within the Parliamentary Triangle. The High Court building houses three courtrooms, Justices' chambers, and the Court's main registry, library, and corporate services facilities. In addition, there are offices of the High Court Registry in Sydney and Melbourne, staffed by officers of the High Court. In Adelaide, Brisbane, Darwin and Perth, registry functions are performed on behalf of the High Court by officers of the Federal Court of Australia, and in Hobart they are performed by officers of the Supreme Court of Tasmania.</p>
+<button type="button" id="rate" onclick="show()" class="r">Rate</button>
+<p class="control"><a class="contact" href="#top">[go back]</a></p>
+<a id="history"></a>
+<h3 class="hor">History</h3>
+<a id="begin"></a>
+<h4 class="hor">Beginnings</h4>
+<img alt="OpeningCeremony" class="content" src="images/OpeningCeremony.jpg" title="Opening Ceremony"/>
+<p>The first sitting of the High Court took place in the Banco Court of the Supreme Court building in Melbourne on 6 October 1903.</p>
+<p>The Court quickly gained an international reputation for judicial excellence. Such was its success that the workload quickly became too much for three Justices. In 1906, the Justices made representations to parliament for an increase in their number. Later that same year, two more Justices were appointed - Sir Isaac Isaacs and Henry Bournes Higgins.</p>
+<p>In November 1912 Justice O'Connor died in office. At the same time, the workload of the High Court had grown to the extent that it was stretching the capacity of five Justices, so Parliament agreed to again increase the Bench by two.</p>
+<a id="gdww"></a>
+<h4 class="hor">The Great Depression and World War II</h4>
+<img alt="1929" class="content" src="images/1929.jpg" title="The Great Depression"/>
+<p>In 1929 the Great Depression gripped the world. In July of that year Justice Powers retired, but the vacancy was not immediately filled. Then, in March 1930 Chief Justice Knox retired. Sir Isaac Isaacs was promoted to the position of Chief Justice, leaving a Bench of just five. The Great Depression had caused the workload of the High Court to decrease, and consequently there was a view in some areas of government that, in the interests of economy, the two vacancies on the High Court Bench should not be filled.</p>
+<p>During World War II the High Court was called upon to determine many issues related to the extent of the Commonwealth's defence powers as prescribed in the Constitution. The results generally widened the Commonwealth's powers, in time of war or immediate threat of war, at the expense of the States. The situation was found to be different, however, during peace-time. In the famous "Communist Party Case" of 1951, for instance, the Court ruled invalid an attempt by the Parliament to invoke its defence powers (in light of the Korean conflict then in progress) to declare the Australian Communist Party an unlawful association.</p>
+<a id="dly"></a>
+<h4 class="hor">Developments in Later Years</h4>
+<img alt="HCA" class="content" src="images/HCA.jpg" title="High Court Hearing"/>
+<p>During the 1960's the appellate and original jurisdiction work of the High Court had grown to burdensome proportions. Sir Garfield Barwick, both as a Minister in federal Parliament (1958-1964) and as Chief Justice of the High Court (from 1964), proposed a new federal superior court to free the High Court from much of this work. The proposal grew in strength in subsequent years and, in 1976, legislation was passed establishing the Federal Court of Australia.</p>
+<p>In 1977 the Constitution Alteration (Retirement of Judges) Act was proclaimed, ending the life tenure of High Court Justices. The Act required that all Justices appointed from then on must retire on attaining the age of 70 years.</p>
+<p>In 1979 the High Court was given the power to administer its own affairs by the passage of the High Court of Australia Act 1979. </p>
+<a id="accommodation"></a>
+<h4 class="hor">Accommodation</h4>
+<img alt="CourtBuilding" class="content" src="images/CourtBuilding.jpg" title="High Court"/>
+<p>In its early years, the High Court shared courtroom and registry facilities with State courts in Sydney and Melbourne.A national competition for the design of a permanent home, in Canberra, for the High Court took place in 1972-73. Construction of the building began in 1975 and it was opened by Her Majesty the Queen on 26 May 1980. The Court and its Principal Registry were immediately transferred to the new building and the first sitting in this location took place in June 1980.</p>
+<a id="sp"></a>
+<h4 class="hor">Sitting Practice</h4>
+<img alt="CourtSitting" class="content" src="images/CourtSitting.jpg" title="Court Sitting"/>
+<p>Today, most sittings take place in Canberra. Sittings are also scheduled in Sydney and Melbourne, usually on one day per month on an alternating basis. In addition, the Court continues the practice, established on its inauguration in 1903, of sitting in the capital cities of Queensland, South Australia, Western Australia and Tasmania once each year if there is sufficient business to warrant it.</p>
+<p>Since 1989, the High Court has occasionally heard applications for special leave to appeal by video link with Brisbane, Adelaide and Perth. </p>
+<a id="operation"></a>
+<h3 class="hor">Operation</h3>
+<img alt="CourtOperation" class="content" src="images/CourtOperation.jpg" title="Court Operation"/>
+<p>The High Court of Australia is able to deal with cases which come to it on appeal or which begin in the High Court itself.</p>
+
+<p>Cases which involve interpretation of the Constitution, or where the Court may be invited to depart from one of its previous decisions, or where the Court considers the principle of law involved to be one of major public importance, are normally determined by a full bench comprising all seven Justices if they are available to sit.</p>
+
+<p>Other cases which come to the High Court for final determination involve appeals against the decisions of the Supreme Courts of the States and Territories, of the Federal Court of Australia and of the Family Court of Australia and these are dealt with by a full court of not less than two Justices. In addition there are certain matters which can be heard and determined by a single Justice.</p>
+<a id="tb"></a>
+<h3 class="hor">The Building</h3>
+<a id="introduction"></a>
+<h4 class="hor">Introduction</h4>
+<img alt="Courtview" class="content" src="images/Courtview.jpg" title="High Court"/>
+<p>The High Court building is an outstanding example of late modern Brutalist architecture.It has light-filled, bold geometric shapes and spaces, raw massed concrete, dynamic internal movement, and strong links with neighbouring buildings and landscape. It is monumental and asymmetrical, but also functional. </p>
+<p>A national design competition for the building announced in May 1972 was won by the architectural firm of Edwards Madigan Torzillo and Briggs (EMTB). The builder, PDC Constructions (ACT) Pty Ltd, began construction of the building in 1975, and it was completed in 1980 at a total cost of $46.5 million. It was officially opened by Her Majesty Queen Elizabeth II on 26 May 1980.</p>
+<a id="sf"></a>
+<h4 class="hor">Structural Feature</h4>
+<img alt="CourtInternal" class="content" src="images/CourtInternal.jpg" title="Court Internal"/>
+<p>The 40-metre tall building is essentially one of concrete and glass comprising a number of major functional elements, namely a large public hall, three courtrooms, an administrative wing, and Justices chambers.</p>
+<p>The internal floor area of the building is approximately 18,515 square metres. The building itself covers 0.32 hectares (0.8 acres) and is surrounded by nearly 1 hectare (2.5 acres) of quarry tiles.</p>
+<a id="ec"></a>
+<h4 class="hor">Evolution of Construction</h4>
+<img alt="CourtInCon" class="content" src="images/CourtInCon.jpg" title="High Court under Construction"/>
+<p>The Federal Government approved the transfer of the High Court to Canberra in 1968.In 1972 the NCDC completed its design studies and recommended a precise site for the building. The Government approved the site and at the same time asked the NCDC to conduct an architectural competition for the design of the building.</p>
+<p>In mid-1974 the NCDC advertised for interested contractors to tender for the construction of the building. The successful tender was submitted by PDC Constructions Pty Ltd, who commenced work on the building in April 1975.The Foundation Plaque to commemorate the commencement of construction was unveiled by the Prime Minister in September 1975.The building was completed in April 1980 and was officially opened by Her Majesty Queen Elizabeth II on 26 May.</p>
+<a id="tph"></a>
+<h4 class="hor">The Public Hall</h4>
+<img alt="PublicHall" class="content" src="images/PublicHall.jpg" title="Public Hall"/>
+<p>The public hall is a large space having a 24-metre high ceiling which is supported by two large concrete pillars. Access to all three courtrooms is gained from the public hall. The hall is also a frequent venue for cultural exhibitions and musical concerts.</p>
+<p>Photographic portraits of all Chief Justices and Justices of the High Court since its inception are displayed in the public hall. Also located in the public hall is a display case, containing interesting historical items concerning the history and operation of the Court, and a theatrette featuring a short film about the Court's judicial work.</p>
+<p>The building contains three courtrooms of different size which are used for different purposes.</p>
+<a id="c1"></a>
+<h4 class="hor">Courtroom One</h4>
+<img alt="c1" class="content" src="images/c1.jpg" title="Courtroom One"/>
+<p>No. 1 Courtroom is the building's focal point; it is used on all ceremonial occasions and for all cases where a full bench of the seven Justices of the Court is required to sit. The room measures 17.5 metres from floor to ceiling and has two levels of public gallery. </p>
+<p>The Courtroom's acoustic treatment complements a sophisticated sound reinforcement system, the audio output of which is also reticulated to a remotely located room which accommodates the Court Reporting Service. Television cameras installed in the Courtroom allow video monitoring of the Court's proceedings to facilitate the production of transcripts by the Court Reporting Service.</p>
+<a id="c2"></a>
+<h4 class="hor">Courtroom Two</h4>
+<img alt="c2" class="content" src="images/c2.jpg" title="Courtroom Two"/>
+<p>No. 2 Courtroom is described as the "Working Courtroom", as it is the venue for the majority of hearings. It is mostly used in cases where a full court of fewer than seven Justices is sitting. It has similar wall panelling and fittings to No. 1 Courtroom, although the ceiling is of painted moulded plywood.</p>
+<p>No. 2 Courtroom is also used for hearing applications for leave to appeal by video link. It therefore is fitted with special equipment for the transmission and reception of pictures and sound between the Courtroom and other cities in Australia.</p>
+<a id="c3"></a>
+<h4 class="hor">Courtroom Three</h4>
+<img alt="c3" class="content" src="images/c3.jpg" title="Courtroom Three"/>
+<p>No. 3 Courtroom has been designed for cases which will be dealt with generally by a single Justice and is the smallest of the three courtrooms. It has a jury box so that a trial can be conducted on the rare occasions that such a case comes before the High Court. </p>
+<p>In Courtroom No. 1 are portraits of the first three Justices of the High Court. In Courtroom No. 2 the portraits of the second, third, fourth and fifth Chief Justices are displayed, and in Courtroom No. 3 are the portraits of the sixth, seventh, eighth and ninth Chief Justices.</p>
+<a id="statics"></a>
+<h3 class="hor">2013 Judgement Statics</h3>
+<p class="caption">Quantity of Judegements per Month</p>
+<table class="hc">
+<tr><th>Month</th><td>February</td><td class="horstagger">March</td><td>April</td><td class="horstagger">May</td><td>June</td><td class="horstagger">August</td><td>October</td></tr>
+<tr><th>Quantity</th><td>4</td><td class="horstagger">4</td><td>3</td><td class="horstagger">9</td><td>8</td><td class="horstagger">4</td><td>2</td></tr>
+</table>
+<h3>Site Map</h3>
+<h4>Click the contents to go to the corresponding pages</h4>
+<img id="sitemap" src="images/constitution.gif" usemap="#map" alt="Constitution" title="Please wait..."/>
+<map name="map">
+<area alt="House of Representatives" shape="rect" coords="0,210,140,320" title="House of Representatives" href="HOR.htm" onclick="window.parent.HORchange()"/>
+<area alt="Senate" shape="rect" coords="140,210,285,320" title="Senate" href="S.htm" onclick="window.parent.Schange()"/>
+<area alt="High Cournt" shape="rect" coords="482,185,594,232" title="High Cournt" href="HC.htm" onclick="window.parent.HCchange()"/>
+<area alt="Executive Government" shape="rect" coords="171,347,504,385" title="Executive Government" href="EG.htm" onclick="window.parent.EGchange()"/>
+<area alt="Home Page" shape="rect" coords="143,0,531,54" title="Home Page" href="C.htm" onclick="window.parent.Cchange()"/>
+</map>
+</div>
+
+<div id="copyright">
+<p>If you have any further question or you found the content on this page inappropriate,please feel free to <a class="contact" href="mailto:131306105@polytechnicwest.wa.edu.au">contact Man Fu Lei.</a> Contents on this page are all from the Internet which can be copied and used unlimitedly. No right is reserved.</p>
+</div>
+
+</body>
+</html>

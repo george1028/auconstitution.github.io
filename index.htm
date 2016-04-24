@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>index</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+</head>
+<body onload="reset();Cchange();">
+<div id="flink">
+<ol>
+<li class="flink"><a href="C.htm" target="main"><img id="Cthumb" src="images/indexlogo.jpg" class="flink" alt="logo" title="Constitution" onclick="Cchange()"/></a></li>
+<li class="flink"><a href="HOR.htm" target="main"><img id="HORthumb" src="images/HORlogo.jpg" class="flink" alt="HORlogo" title="House of Representatives" onclick="HORchange()"/></a></li>
+<li class="flink"><a href="S.htm" target="main"><img id="Sthumb" src="images/Slogo.jpg" class="flink" alt="Slogo" title="Senate" onclick="Schange()"/></a></li>
+<li class="flink"><a href="HC.htm" target="main"><img id="HCthumb" src="images/HClogo.jpg" class="flink" alt="HClogo" title="High Court" onclick="HCchange()"/></a></li>
+<li class="flink"><a href="EG.htm" target="main"><img id="EGthumb" src="images/EGlogo.jpg" class="flink" alt="EGlogo" title="Executive Government" onclick="EGchange()"/></a></li>
+</ol>
+</div>
+
+<div id="main">
+<iframe src="C.htm" name="main" id="i"></iframe>
+</div>
+
+<div id="time">
+<p id="clock" class="clock"></p>
+<script>
+function Clock(){
+var cl=new Date();
+document.getElementById("clock").innerHTML=cl;
+}
+setInterval(Clock,1000);
+</script>
+</div>
+
+<script>
+var Con,HORon,Son,HCon,EGon;
+
+function reload(){
+var str=document.getElementById("i").src;
+var path=str.substring(0,str.lastIndexOf("/"));
+document.getElementById("i").src = path + "/C.htm";
+}
+function reset(){
+Con=false;
+HORon=false;
+Son=false;
+HCon=false;
+EGon=false;
+document.getElementById("Cthumb").src="images/indexlogo.jpg";
+document.getElementById("HORthumb").src="images/HORlogo.jpg";
+document.getElementById("Sthumb").src="images/Slogo.jpg";
+document.getElementById("HCthumb").src="images/HClogo.jpg";
+document.getElementById("EGthumb").src="images/EGlogo.jpg";
+}
+function Cchange(){
+	reset();
+	document.getElementById("Cthumb").src="images/ClogoOn.jpg";
+	Con=true;
+	reload();
+}
+function HORchange(){
+	reset();
+	document.getElementById("HORthumb").src="images/HORlogoOn.jpg";
+	HORon=true;
+}
+function Schange(){
+	reset();
+	document.getElementById("Sthumb").src="images/SlogoOn.jpg";
+	Son=true;
+	//alert(Son);
+}
+function HCchange(){
+	reset();
+	document.getElementById("HCthumb").src="images/HClogoOn.jpg";
+	HCon=true;
+}
+function EGchange(){
+	reset();
+	document.getElementById("EGthumb").src="images/EGlogoOn.jpg";
+	EGon=true;
+}
+</script>
+
+<script>
+$(document).ready(function(){
+	$("#Cthumb").hover(function(){
+	document.getElementById("Cthumb").src="images/ClogoOn.jpg";
+	},function(){
+	if(!Con){
+	document.getElementById("Cthumb").src="images/indexlogo.jpg";
+	//alert(Con);
+	}
+	});
+});
+$(document).ready(function(){
+	$("#HORthumb").hover(function(){
+	document.getElementById("HORthumb").src="images/HORlogoOn.jpg";
+	},function(){
+	if(!HORon)document.getElementById("HORthumb").src="images/HORlogo.jpg";
+	});
+});
+$(document).ready(function(){
+	$("#Sthumb").hover(function(){
+	document.getElementById("Sthumb").src="images/SlogoOn.jpg";
+	},function(){
+	if(!Son)document.getElementById("Sthumb").src="images/Slogo.jpg";
+	});
+});
+$(document).ready(function(){
+	$("#HCthumb").hover(function(){
+	document.getElementById("HCthumb").src="images/HClogoOn.jpg";
+	},function(){
+	if(!HCon)document.getElementById("HCthumb").src="images/HClogo.jpg";
+	});
+});
+$(document).ready(function(){
+	$("#EGthumb").hover(function(){
+	document.getElementById("EGthumb").src="images/EGlogoOn.jpg";
+	},function(){
+	if(!EGon)document.getElementById("EGthumb").src="images/EGlogo.jpg";
+	});
+});
+</script>
+</body>
+</html>

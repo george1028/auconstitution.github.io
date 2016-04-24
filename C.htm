@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Constitution</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css"/>
+</head>
+<body onload="hide()">
+
+<div id="header">
+<a href="#sitemap" title="Site Map"><img alt="indexlogo" id="top" src="images/indexlogo.jpg" class="logo" title="Site Map"/></a><h1>&nbsp;&nbsp;&nbsp;CONSTITUTION of AUSTRALIA</h1>
+</div>
+
+<div id="menu">
+<ul>
+<li class="dmenu"><h4><a  href="HOR.htm" onclick="window.parent.HORchange()">House of<br/> Representatives</a></h4></li>
+<li class="menu"><h4><a  href="S.htm" onclick="window.parent.Schange()">Senate</a></h4></li>
+<li class="dmenu"><h4><a  href="EG.htm" onclick="window.parent.EGchange()">Executive <br/>Government</a></h4></li>
+<li class="menu"><h4><a  href="HC.htm" onclick="window.parent.HCchange()">High Court</a></h4></li>
+<li class="menu"><h4><a  href="#sitemap">Site Map</a></h4></li>
+<li class="menu"><h4><a  href="mailto:131306105@polytechnicwest.wa.edu.au">Contact Me</a></h4></li>
+</ul>
+</div>
+
+<div id="link">
+<ul>
+<li class="headline"><a class="list" title="Preamble" href="#preamble">Preamble</a></li>
+<li class="headline"><a class="list" title="Chapter 1" href="#chapter1">Chapter I. The Parliament</a>
+<ol>
+<li class="sub"><a class="list" title="Part I" href="#part1">Part I - General</a></li>
+<li class="sub"><a class="list" title="Part II" href="#part2">Part II - The Senate</a></li>
+<li class="sub"><a class="list" title="Part III" href="#part3">Part III - The House of Representatives</a></li>
+<li class="sub"><a class="list" title="Part IV" href="#part4">Part IV - Both Houses of the Parliament</a></li>
+<li class="sub"><a class="list" title="Part V" href="#part5">Part V - Powers of the Parliament</a></li>
+</ol>
+</li>
+<li class="headline"><a class="list" title="Chapter II" href="#chapter2">Chapter II. The Executive Government</a></li>
+<li class="headline"><a class="list" title="Chapter III" href="#chapter3">Chapter III. The Judicature</a></li>
+<li class="headline"><a class="list" title="Chapter IV." href="#chapter4">Chapter IV. Finance and Trade</a></li>
+<li class="headline"><a class="list" title="Chapter V." href="#chapter5">Chapter V. The States</a></li>
+<li class="headline"><a class="list" title="Chapter VI." href="#chapter6">Chapter VI. New States</a></li>
+<li class="headline"><a class="list" title="Chapter VII." href="#chapter7">Chapter VII. Miscellaneous</a></li>
+<li class="headline"><a class="list" title="Chapter VIII." href="#chapter8">Chapter VIII. Alteration of the Constitution</a></li>
+</ul>
+<div id="music">
+<audio id="index" src="music/pal3.mp3" controls autoplay>Your browser does not support HTML5 video.</audio>
+<script>
+myVid=document.getElementById("index");
+myVid.volume=1.0;
+function no(){
+if(document.getElementById("l1").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else if(document.getElementById("l2").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else if(document.getElementById("l3").checked){
+document.getElementById("submit1").disabled=true;
+alert("You really like it!");
+}
+else alert("Please choose one");
+
+}
+function ok(){
+if(document.getElementById("m1").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m2").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m3").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m4").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m5").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+else if(document.getElementById("m6").checked){
+document.getElementById("submit").disabled=true;
+alert("Your feedback is submitted,Thank you!");
+}
+if(document.getElementById("submit").disabled){
+document.getElementById("yes").style.visibility="hidden";
+}
+else{
+alert("Please choose one");
+}
+}
+function show(){
+//document.getElementById("submit").disabled=false;
+document.getElementById("yes").style.visibility="visible";
+document.getElementById("rate").style.visibility="hidden";
+}
+function hide(){
+document.getElementById("yes").style.visibility="hidden";
+}
+</script>
+</div>
+
+</div>
+<div id="yes">
+<p>&nbsp;&nbsp;&nbsp;You really&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" id="submit1" onclick="no()">submit</button>
+</p>
+<form>
+<input type="radio" name="like" id="l1" value="cl">Like this page crazily<br>
+<input type="radio" name="like" id="l2" value="al">Like this page absolutely<br>
+<input type="radio" name="like" id="l3" value="vl">Like this page very much
+</form>
+<p>&nbsp;&nbsp;&nbsp;Your are&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="button" id="submit" onclick="ok()">submit</button>
+</p>
+<form>
+<input type="radio" name="mood" id="m1" value="h">Happy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="mood" id="m2" value="a">Angry&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="radio" name="mood" id="m3" value="s">Smiling<br>
+<input type="radio" name="mood" id="m4" value="d">Desperate
+<input type="radio" name="mood" id="m5" value="s">Suprised
+<input type="radio" name="mood" id="m6" value="c">Curious
+</form>
+</div>
+
+<div id="content">
+<a id="preamble"></a>
+<h3>Preamble</h3>
+<p>The Commonwealth of Australia Constitution Act 1900 is an Act of the Parliament of the United Kingdom at Westminster.<p>
+<p>Whereas the people of New South Wales, Victoria, South Australia, Queensland, and Tasmania, humbly relying on the blessing of Almighty God, have agreed to unite in one indissoluble Federal Commonwealth under the Crown of the United Kingdom of Great Britain and Ireland, and under the Constitution hereby established and whereas it is expedient to provide for the admission into the Commonwealth of other Australasian Colonies and possessions of the Queen.</p>
+<button type="button" id="rate" onclick="show()" class="r">Rate</button>
+<p class="control"><a class="contact" href="#top">[go back]</a></p>
+<a id="chapter1"></a>
+<h3>Chapter I. The Parliament</h3>
+<img alt="ParliamentHouse"  class="content" src="images/ParliamentHouse.jpg" title="Parliament House"/>
+<a id="part1"></a>
+<h4>Part I - General</h4>
+<p>A Governor-General appointed by the Queen shall be Her Majesty's representative in the Commonwealth, and shall have and may exercise in the Commonwealth during the Queen's pleasure, but subject to this Constitution, such powers and functions of the Queen as Her Majesty may be pleased to assign to him.</p>
+<p>There shall be payable to the Queen out of the Consolidated Revenue fund of the Commonwealth, for the salary of the Governor-General, an annual sum which, until the Parliament otherwise provides, shall be ten thousand pounds. The salary of the Governor-General shall not be altered during his continuance in office.<p>
+<a id="part2"></a>
+<h4>Part II - The Senate</h4>
+<img alt="Senate" class="content" src="images/Senate.jpg" title="Senate"/>
+<p>The Senate shall be composed of senators for each State, directly chosen by the people of the State, voting, until the Parliament otherwise provides, as one electorate.</p>
+<p>Until the Parliament otherwise provides there shall be six senators for each Original State. The Parliament may make laws increasing or diminishing the number of senators for each State, but so that equal representation of the several Original States shall be maintained and that no Original State shall have less than six senators. The senators shall be chosen for a term of six years, and the names of the senators chosen for each State shall be certified by the Governor to the Governor-General.</p>
+<a id="part3"></a>
+<h4>Part III - The House of Representatives</h4>
+<img alt="HouseOfRepresentative" class="content" src="images/HouseOfRepresentative.jpg" title="House of Representatives"/>
+<p>The House of Representatives shall be composed of members directly chosen by the people of the Commonwealth, and the number of such members shall be, as nearly as practicable, twice the number of senators. The number of members chosen in the several States shall be in proportion to the respective numbers of their people.</p>
+<p>The House of Representatives shall, before proceeding to the despatch of any other business, choose a member to be the Speaker of the House, and as often as the office of Speaker becomes vacant the House shall again choose a member to be the Speaker. The Speaker shall cease to hold his office if he ceases to be a member. He may be removed from office by a vote of the House, or he may resign his office or his seat by writing addressed to the Governor-General.</p>
+<a id="part4"></a>
+<h4>Part IV - Both Houses of the Parliament</h4>
+<img alt="oath" class="content" src="images/oath.jpg" title="Oath Affirmation"/>
+<p>Every senator and every member of the House of Representatives shall before taking his seat make and subscribe before the Governor-General, or some person authorised by him, an oath or affirmation of allegiance in the form set forth in the schedule to this Constitution.</p>
+<p> The powers, privileges, and immunities of the Senate and of the House of Representatives, and of the members and the committees of each House, shall be such as are declared by the Parliament, and until declared shall be those of the Commons House of Parliament of the United Kingdom, and of its members and committees, at the establishment of the Commonwealth.</p>
+<a id="part5"></a>
+<h4>Part V - Powers of the Parliament</h4>
+<img alt="Power" class="content" src="images/Power.jpg" title="Power"/>
+<p>The Parliament shall, subject to this Constitution, have power to make laws for the peace, order, and good government of the Commonwealth.</p>
+<p>The Senate may at any stage return to the House of Representatives any proposed law which the Senate may not amend, requesting, by message, the omission or amendment of any items or provisions therein. And the House of Representatives may, if it thinks fit, make any of such omissions or amendments, with or without modifications.</p>
+<a id="chapter2"></a>
+<h3>Chapter II. The Executive Government</h3>
+<img alt="GovernmentHouse" class="content" src="images/GovernmentHouse.jpg" title="Government House"/>
+<p>The executive power of the Commonwealth is vested in the Queen and is exercisable by the Governor-General as the Queen's representative, and extends to the execution and maintenance of this Constitution, and of the laws of the Commonwealth.</p>
+<p>There shall be a Federal Executive Council to advise the Governor-General in the government of the Commonwealth, and the members of the Council shall be chosen and summoned by the Governor-General and sworn as Executive Councillors, and shall hold office during his pleasure.</p>
+<a id="chapter3"></a>
+<h3>Chapter III. The Judicature</h3>
+<img alt="HighCourt" class="content" src="images/HighCourt.jpg" title="High Court"/>
+<p> The judicial power of the Commonwealth shall be vested in a Federal Supreme Court, to be called the High Court of Australia, and in such other federal courts as the Parliament creates, and in such other courts as it invests with federal jurisdiction. The High Court shall consist of a Chief Justice, and so many other Justices, not less than two, as the Parliament prescribes.</p>
+<p>Subject to this section, the maximum age for Justices of any court created by the Parliament is seventy years.</p>
+<p>A Justice of the High Court or of a court created by the Parliament may resign his office by writing under his hand delivered to the Governor-General.</p>
+<a id="chapter4"></a>
+<h3>Chapter IV. Finance and Trade</h3>
+<p>All revenues or moneys raised or received by the Executive Government of the Commonwealth shall form one Consolidated Revenue Fund, to be appropriated for the purposes of the Commonwealth in the manner and subject to the charges and liabilities imposed by this Constitution.</p>
+<p class="caption">Government Financial Statics(GFS) of Australia, June Quarter 2013</p>
+<table>
+<tr><th>Quarter</th><th>March($m)</th><th>June($m)</th><th>Quarter Change(%)</th></tr>
+<tr><td>Taxation Revenue</td><td>102,332</td><td>115,379</td><td>12.8</td></tr>
+<tr><td class="stagger">Total Revenue</td><td class="stagger">126,009</td><td class="stagger">142,689</td><td class="stagger">13.2</td></tr>
+<tr><td>Total Expenses</td><td>131,347</td><td>140,109</td><td>6.7</td></tr>
+<tr><td class="stagger">GFS Net Operating Balance</td><td class="stagger">-5,338</td><td class="stagger">2,580</td><td class="stagger">N/A</td></tr>
+<tr><td>GFS Net Lending(+)/Borrowing(-)</td><td>-8,697</td><td>226</td><td>N/A</td></tr>
+</table>
+<a id="chapter5"></a>
+<h3>Chapter V. The States</h3>
+<img alt="states" class="content" src="images/states.gif" title="Australian States"/>
+<p>The Constitution of each State of the Commonwealth shall, subject to this Constitution, continue as at the establishment of the Commonwealth, or as at the admission or establishment of the State, as the case may be, until altered in accordance with the Constitution of the State.</p>
+<p>When a law of a State is inconsistent with a law of the Commonwealth, the latter shall prevail, and the former shall, to the extent of the inconsistency, be invalid.</p>
+<a id="chapter6"></a>
+<h3>Chapter VI. New States</h3>
+<p>The Parliament may admit to the Commonwealth or establish new States, and may upon such admission or establishment make or impose such terms and conditions, including the extent of representation in either House of the Parliament, as it thinks fit.</p>
+<a id="chapter7"></a>
+<h3>Chapter VII. Miscellaneous</h3>
+<p>The seat of Government of the Commonwealth shall be determined by the Parliament, and shall be within territory which shall have been granted to or acquired by the Commonwealth, and shall be vested in and belong to the Commonwealth, and shall be in the State of New South Wales, and be distant not less than one hundred miles from Sydney.</p>
+<a id="chapter8"></a>
+<h3>Chapter VIII. Alteration of the Constitution</h3>
+<img alt="void" class="content" src="images/void.jpg" title="Void"/>
+<p>This Constitution shall not be altered except in the following manner:
+The proposed law for the alteration thereof must be passed by an absolute majority of each House of the Parliament, and not less than two nor more than six months after its passage through both Houses the proposed law shall be submitted in each State and Territory to the electors qualified to vote for the election of members of the House of Representatives.</p>
+<h3>Site Map</h3>
+<h4>Click the contents to go to the corresponding pages</h4>
+<img id="sitemap" src="images/constitution.gif" usemap="#map" alt="Constitution" title="Please wait..."/>
+<map name="map">
+<area alt="House of Representatives" shape="rect" coords="0,210,140,320" title="House of Representatives" href="HOR.htm" onclick="window.parent.HORchange()"/>
+<area alt="Senate" shape="rect" coords="140,210,285,320" title="Senate" href="S.htm" onclick="window.parent.Schange()"/>
+<area alt="High Cournt" shape="rect" coords="482,185,594,232" title="High Cournt" href="HC.htm" onclick="window.parent.HCchange()"/>
+<area alt="Executive Government" shape="rect" coords="171,347,504,385" title="Executive Government" href="EG.htm" onclick="window.parent.EGchange()"/>
+<area alt="Home Page" shape="rect" coords="143,0,531,54" title="Home Page" href="C.htm" onclick="window.parent.Cchange()"/>
+</map>
+</div>
+
+<div id="copyright">
+<p>If you have any further question or you found the content on this page inappropriate,please feel free to <a class="contact" href="mailto:131306105@polytechnicwest.wa.edu.au">contact Man Fu Lei.</a> Contents on this page are all from the Internet which can be copied and used unlimitedly. No right is reserved.</p>
+</div>
+
+</body>
+</html>
