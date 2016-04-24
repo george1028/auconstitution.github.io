@@ -156,8 +156,9 @@ left:4%;
 color:#201314;
 background-color:#709394;
 position:fixed;
-z-index:-5;
+z-index:1;
 padding-top:1%;
+opacity:0
 }
 input{
 margin-bottom:5%;
