@@ -17,6 +17,42 @@ list-style:none;
 img.flink{
 width:90%;
 }
+.search
+{
+background:url(5.png);
+background-repeat:no-repeat;
+background-size:80%;
+margin-left:8%;
+#margin-bottom:22%;
+#margin-top:2%;
+#width:320px;
+width:120%;
+height:32px;
+}
+.text
+{
+background:transparent;
+width:65%;
+height:23px;
+border:0px;
+outline:0px;
+#padding:10px;
+font-size:21px;
+border-radius:18px 0 0 20px;
+-webkit-border-radius:18px 0 0 20px;
+-moz-border-radius:18px 0 0 20px;
+-o-border-radius:18px 0 0 20px;
+}
+.submit
+{
+background:transparent;
+margin-left:0.6%;
+border:0px;
+height:25px;
+width:25px;
+cursor: pointer;
+border-radius: 100%;
+}
 #main{
 position:absolute;
 top:0%;
