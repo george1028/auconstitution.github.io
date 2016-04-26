@@ -40,6 +40,16 @@ if (isset($_POST['search'])){
 <tr><th>ID</th><th>Server Name</th><th>Country</th></tr>
 <?php print("$output");
 echo '<h3>'.$count.' records retrieved.</h3>';
+$content = strip_tags(file_get_contents("http://george1028.github.io"));
+if($searchq != ''){
+        if (strstr($content,$searchq)) {
+   echo "\"$searchq\" is found on this page";
+}
+else {
+   echo "\"$searchq\" is not found on this page";
+} 
+}
+ 
 ?>
 </table>
 </body>
