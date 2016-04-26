@@ -48,7 +48,8 @@ border-radius:18px 0 0 20px;
 .submit
 {
 background:transparent;
-margin-left:1.5%;
+margin-left:1.2%;
+outline:none;
 border:0px;
 height:7%;
 width:7%;
