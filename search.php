@@ -36,9 +36,8 @@ if (isset($_POST['search'])){
 </script>
 </head>
 <body>
-<table>
-<tr><th>ID</th><th>Server Name</th><th>Country</th></tr>
-<?php print("$output");
+<div>
+<?php 
 echo '<h3>'.$count.' records retrieved.</h3>';
 $content = strip_tags(file_get_contents("http://george1028.github.io"));
 if($searchq != ''){
@@ -49,8 +48,13 @@ else {
    echo "\"$searchq\" is not found on this page";
 } 
 }
- 
 ?>
+<table>
+<tr><th>ID</th><th>Server Name</th><th>Country</th></tr>
+<?php print("$output");
+?>
+
 </table>
+</div>
 </body>
 </html>
