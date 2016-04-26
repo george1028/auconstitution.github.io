@@ -40,7 +40,6 @@ if (isset($_POST['search'])){
 <tr><th>ID</th><th>Server Name</th><th>Country</th></tr>
 <?php print("$output");
 echo '<h3>'.$count.' records retrieved.</h3>';
-echo $row[1];
 ?>
 </table>
 </body>
