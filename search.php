@@ -11,7 +11,7 @@ if (isset($_POST['search'])){
         $query = mysql_query("select * from server where `FQDN` like '%$searchq%'") or die(mysql_error());
         $count = mysql_num_rows($query);
         if($count == 0){
-                $output = 'There was no search result';
+                $output = 'There is no search result.';
      
         }else{
                 while($row = mysql_fetch_array($query)){
@@ -42,10 +42,10 @@ echo '<h3>'.$count.' records retrieved.</h3>';
 $content = strip_tags(file_get_contents("http://george1028.github.io"));
 if($searchq != ''){
         if (strstr($content,$searchq)) {
-   echo "\"$searchq\" is found on this page";
+   echo "\"$searchq\" is found on this page. ";
 }
 else {
-   echo "\"$searchq\" is not found on this page";
+   echo "\"$searchq\" is not found on this page. ";
 } 
 }
 ?>
