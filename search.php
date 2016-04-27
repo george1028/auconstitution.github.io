@@ -35,7 +35,7 @@ if (isset($_POST['search'])){
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 </script>
 </head>
-<body>
+<body class="s">
 <div id="content">
 <?php
 $lastPos = 0;
@@ -53,12 +53,12 @@ if($searchq != ''){
     $posend = strripos($temp,' ');
     $temp = substr($temp,0, $posend);
     $pos=stripos($temp,$searchq);
-    $result[] = substr($temp,0,$pos).'<font color="Green">'.substr($temp,$pos,strlen($searchq)).'</font>'.substr($temp,$pos+strlen($searchq));
+    $result[] = '...'.substr($temp,0,$pos).'<b>'.substr($temp,$pos,strlen($searchq)).'</b>'.substr($temp,$pos+strlen($searchq)).'...';
     $lastPos = $lastPos + strlen($searchq);
 }
     echo sizeof($positions)." occurrences are found for '$searchq' <br /><br /><br />";
 foreach ($result as $display){
-        echo '<font size=5>'."$display</font> <br /><br />";
+        echo '<font size=5 color=#000>'."$display</font> <br /><br />";
 }
     /*   # if (strstr($content,$searchq)) {
          if($pos=stripos($content,$searchq)){
