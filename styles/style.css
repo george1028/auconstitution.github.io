@@ -72,19 +72,21 @@ a.signin1:hover{
 color:red;
 }
 .email{
-margin-left:14%;
 width:25%;
 height:4%;
 }
 .username{
-margin-left:11.5%;
 height:4%;
 width:20%;
 }
 .password{
-margin-left:12%;
 height:4%;
 width:20%;
+}
+form label{
+display: inline-block;
+width: 100px;
+font-weight: bold;
 }
 .signin{
 margin-left:21%;
