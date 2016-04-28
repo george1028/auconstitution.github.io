@@ -43,7 +43,7 @@ if (isset($_POST['email'])&&isset($_POST['username'])&&isset($_POST['password'])
 <label>E-mail:</label><input class="email" type="text" name="email" value="Your E-mail address" onclick='value=""'/><br />
 <label>Username:</label><input class="username" type="text" name="username" value="Your name" onclick='value=""'/><br />
 <label>Password:</label><input class="password" type="password" name="password" onclick='value=""'/><br />
-<input class="signup" type="submit" value="Sign In" name="login"/>
+<input class="signup" type="submit" value="Sign Up" name="login"/>
 </form>
 <?php
 print($output);
