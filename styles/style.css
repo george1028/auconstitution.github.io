@@ -119,7 +119,7 @@ font-size:13pt;
 }
 body{
 background-image:url(background.jpg);
-background-size:cover;
+background-size:1100%;
 background-repeat:no-repeat;
 color:#fff;
 }
