@@ -7,7 +7,8 @@ $i = 0;
 //collect
 if (isset($_POST['search'])){
         $searchq = $_POST['search'];
-        $searchq = preg_replace("#[^0-9a-z]#i","",$searchq);
+        #$searchq = preg_replace("#[^0-9a-z]#i","",$searchq);
+        $searchq = str_replace('\'',' ',$searchq);
         $query = mysql_query("select * from server where `FQDN` like '%$searchq%'") or die(mysql_error());
         $count = mysql_num_rows($query);
         if($count == 0){
