@@ -108,9 +108,17 @@ height:95%;
 }
 #time{
 position:absolute;
+top:0%;
+left:18%;
+width:82%;
+}
+@-moz-document url-prefix() {
+#time{
+position:absolute;
 top:-2%;
 left:18%;
 width:82%;
+}        
 }
 p.clock{
 text-align:left;
@@ -125,7 +133,7 @@ color:#fff;
 }
 body.HOR{
 background-image:url(HORBackGround.jpg);
-background-size:1100%;
+background-size:500%;
 background-repeat:no-repeat;
 }
 body.s{
