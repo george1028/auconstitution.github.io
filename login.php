@@ -8,7 +8,7 @@ $i = 0;
 if (isset($_POST['email'])&&isset($_POST['password'])){
         $searchq1 = $_POST['email'];
        # $searchq = preg_replace("#[^0-9a-z]#i","",$searchq);
-       # $searchq = str_replace(' ','+',$searchq);
+        $searchq1 = str_replace('\'',' ',$searchq1);
         $searchq2 = $_POST['password'];
         $querypass = mysql_query("select distinct * from `user` where `email` = '$searchq1'") or die(mysql_error());
         $count = mysql_num_rows($querypass);
