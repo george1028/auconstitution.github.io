@@ -3,11 +3,33 @@
 <head>
 <title>Welcome!</title>
 <meta charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" id="normal"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style-moz.css" id="moz"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style-ie.css" id="ie"/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 </script>
+<script type="text/javascript">
+function replace(){
+//alert(window.navigator.appVersion);
+if(window.navigator.userAgent.indexOf("Firefox")>-1){
+document.getElementById("normal").disabled = true;
+document.getElementById("ie").disabled = true;
+document.getElementById("moz").disabled = false;
+}
+else if(window.navigator.userAgent.indexOf("WebKit")>-1)
+{
+document.getElementById("normal").disabled = false;
+document.getElementById("ie").disabled = true;
+document.getElementById("moz").disabled = true;
+}
+else{
+document.getElementById("normal").disabled = false;
+document.getElementById("ie").disabled = true;
+document.getElementById("moz").disabled = true;
+}}
+</script>
 </head>
-<body onload="reset();Cchange();">
+<body onload="reset();Cchange();replace();">
 <div id="flink">
 <ol>
 <li class="flink"><a href="C.htm" target="main"><img id="Cthumb" src="images/indexlogo.jpg" class="flink" alt="logo" title="Constitution" onclick="Cchange()"/></a></li>

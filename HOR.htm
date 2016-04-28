@@ -3,9 +3,33 @@
 <head>
 <title>House of Representative of Australia</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" id="normal"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style-moz.css" id="moz"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style-ie.css" id="ie"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script type="text/javascript">
+function replace(){
+//alert(window.navigator.userAgent);
+if(window.navigator.userAgent.indexOf("Firefox")>-1){
+document.getElementById("normal").disabled = true;
+document.getElementById("ie").disabled = true;
+document.getElementById("moz").disabled = false;
+}
+else if(window.navigator.userAgent.indexOf("WebKit")>-1)
+{
+document.getElementById("normal").disabled = false;
+document.getElementById("ie").disabled = true;
+document.getElementById("moz").disabled = true;
+}
+else{
+document.getElementById("normal").disabled = false;
+document.getElementById("ie").disabled = true;
+document.getElementById("moz").disabled = true;
+}}
+</script>
 </head>
-<body class="HOR" onload="hide()">
+<body class="HOR" onload="hide();replace();">
 
 <div id="header">
 <a href="#sitemap" title="Site Map"><img alt="HORlogo" id="top" src="images/HORlogo.jpg" class="logo" title="Site Map"></a><h1>&nbsp;&nbsp;&nbsp;HOUSE of REPRESENTATIVES of AUSTRALIA</h1>

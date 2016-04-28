@@ -3,9 +3,33 @@
 <head>
 <title>Senate</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" id="normal"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style-moz.css" id="moz"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style-ie.css" id="ie"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script type="text/javascript">
+function replace(){
+//alert(window.navigator.userAgent);
+if(window.navigator.userAgent.indexOf("Firefox")>-1){
+document.getElementById("normal").disabled = true;
+document.getElementById("ie").disabled = true;
+document.getElementById("moz").disabled = false;
+}
+else if(window.navigator.userAgent.indexOf("WebKit")>-1)
+{
+document.getElementById("normal").disabled = false;
+document.getElementById("ie").disabled = true;
+document.getElementById("moz").disabled = true;
+}
+else{
+document.getElementById("normal").disabled = false;
+document.getElementById("ie").disabled = true;
+document.getElementById("moz").disabled = true;
+}}
+</script>
 </head>
-<body class="s" onload="hide()">
+<body class="s" onload="hide();replace();">
 
 <div id="header">
 <a href="#sitemap" title="Site Map"><img alt="Slogo" id="top" src="images/Slogo.jpg" class="logo" title="Site Map"></a><h1>&nbsp;&nbsp;&nbsp;SENATE of AUSTRALIA</h1>
