@@ -64,6 +64,15 @@ top:30%;
 left:40%;
 width:55%;
 }
+.email1{
+margin-left:0%;
+}
+.password1{
+margin-left:0%;
+}
+.login1{
+margin-left:0%;
+}
 a.signup1{
 text-decoration:underline;
 color:#fff;
