@@ -30,11 +30,32 @@ if (isset($_POST['email'])&&isset($_POST['username'])&&isset($_POST['password'])
 <html><head>
 <title>Sign In</title>
 <meta charset="utf-8"/>
-<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" id="normal"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style-moz.css" id="moz"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style-android.css" id="android"/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 </script>
+<script type="text/javascript">
+function replace(){
+//alert(window.navigator.userAgent.indexOf("Android"));
+if(window.navigator.userAgent.indexOf("Android")>-1){
+document.getElementById("normal").disabled = true;
+document.getElementById("android").disabled = false;
+document.getElementById("moz").disabled = true;
+}
+else if(window.navigator.userAgent.indexOf("Firefox")>-1){
+document.getElementById("normal").disabled = true;
+document.getElementById("android").disabled = true;
+document.getElementById("moz").disabled = false;
+}
+else{
+document.getElementById("normal").disabled = false;
+document.getElementById("android").disabled = true;
+document.getElementById("moz").disabled = true;
+}}
+</script>
 </head>
-<body class="s">
+<body class="s" onload="replace()">
 <div id='header'>
 <h1>Create Your Account</h1>
 </div>

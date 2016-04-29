@@ -62,7 +62,8 @@ border-radius: 100%;
 {
 position:absolute;
 top:40%;
-left:29%;
+#left:29%;
+right:0%;
 width:65%;
 }
 .email1{
@@ -75,6 +76,15 @@ width:15%;
 }
 .login1{
 margin-left:0%;
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 0.5% 0.5%;
+cursor:pointer;
+text-align: center;
+#text-decoration: none;
+display: inline-block;
+#font-size: 16px;
 }
 a.signup1{
 text-decoration:underline;
@@ -84,16 +94,16 @@ a.signup1:hover{
 color:red;
 }
 .email{
-width:25%;
+width:45%;
 height:4%;
 }
 .username{
 height:4%;
-width:20%;
+width:35%;
 }
 .password{
 height:4%;
-width:20%;
+width:30%;
 }
 form label{
 display: inline-block;
@@ -101,8 +111,8 @@ width: 100px;
 font-weight: bold;
 }
 .signup{
-margin-left:21%;
-width:8%;
+margin-left:31%;
+width:18%;
 height:5%;
 cursor:pointer;
 border-radius:100%;
@@ -139,22 +149,22 @@ color:#fff;
 }
 body.HOR{
 background-image:url(HORBackGround.jpg);
-background-size:1800%;
+background-size:2800%;
 background-repeat:no-repeat;
 }
 body.s{
 background-image:url(SBackGround.jpg);
-background-size:1450%;
+background-size:3450%;
 background-repeat:no-repeat;
 }
 body.hc{
 background-image:url(HCBackGround.jpg);
-background-size:1400%;
+background-size:3400%;
 background-repeat:no-repeat;
 }
 body.eg{
 background-image:url(EGBackGround.jpg);
-background-size:1500%;
+background-size:3500%;
 background-repeat:no-repeat;
 }
 h1{
@@ -438,27 +448,44 @@ background-color:#985;
 img{
 border:0px;
 }
+#sitemap{
+-moz-transform:scale(0.8);
+-webkit-transform:scale(0.8);
+transform:scale(0.8);
+position:relative;
+left:-17%;
+}
 #copyright{
 float:left;
 color:#ddd;
 border-top:3px solid #ddd;
 margin-left:5%;
+font-size:55%;
 width:84%;
 padding-left:3%;
 padding-right:2%;
 }
 a.contact{
 text-decoration:underline;
-color:#fff;
+color:#0ff;
 }
 a.contact:hover{
 color:red;
 }
 button.r{
-top:88%;
+top:90%;
 right:0%;
 position:fixed;
-width:60px;
+width:8%;
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 0.5% 0.5%;
+cursor:pointer;
+text-align: center;
+#text-decoration: none;
+display: inline-block;
+#font-size: 16px;
 }
 p.control{
 top:92%;

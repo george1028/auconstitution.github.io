@@ -61,7 +61,8 @@ border-radius: 100%;
 {
 position:absolute;
 top:30%;
-left:40%;
+#left:29%;
+right:0%;
 width:55%;
 }
 .email1{
@@ -72,6 +73,15 @@ margin-left:0%;
 }
 .login1{
 margin-left:0%;
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 0.5% 0.5%;
+cursor:pointer;
+text-align: center;
+#text-decoration: none;
+display: inline-block;
+#font-size: 16px;
 }
 a.signup1{
 text-decoration:underline;
@@ -453,7 +463,16 @@ button.r{
 top:88%;
 right:0%;
 position:fixed;
-width:60px;
+width:5%;
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 0.5% 0.5%;
+cursor:pointer;
+text-align: center;
+#text-decoration: none;
+display: inline-block;
+#font-size: 16px;
 }
 p.control{
 top:92%;
