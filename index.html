@@ -5,26 +5,25 @@
 <meta charset="utf-8"/>
 <link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" id="normal"/>
 <link rel="stylesheet" media="screen" type="text/css" href="styles/style-moz.css" id="moz"/>
-<link rel="stylesheet" media="screen" type="text/css" href="styles/style-ie.css" id="ie"/>
+<link rel="stylesheet" media="screen" type="text/css" href="styles/style-android.css" id="android"/>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 </script>
 <script type="text/javascript">
 function replace(){
-alert(window.navigator.userAgent);
-if(window.navigator.userAgent.indexOf("Firefox")>-1){
+//alert(window.navigator.userAgent);
+if(window.navigator.userAgent.indexOf("Android")>-1){
 document.getElementById("normal").disabled = true;
-document.getElementById("ie").disabled = true;
-document.getElementById("moz").disabled = false;
-}
-else if(window.navigator.userAgent.indexOf("WebKit")>-1)
-{
-document.getElementById("normal").disabled = false;
-document.getElementById("ie").disabled = true;
+document.getElementById("android").disabled = false;
 document.getElementById("moz").disabled = true;
+}
+else if(window.navigator.userAgent.indexOf("Firefox")>-1){
+document.getElementById("normal").disabled = true;
+document.getElementById("android").disabled = true;
+document.getElementById("moz").disabled = false;
 }
 else{
 document.getElementById("normal").disabled = false;
-document.getElementById("ie").disabled = true;
+document.getElementById("android").disabled = true;
 document.getElementById("moz").disabled = true;
 }}
 </script>
