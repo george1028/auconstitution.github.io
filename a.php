@@ -1,11 +1,14 @@
 <select id="option" name="option1[]"><option value="1">IT</option><option value="2">Accounting</option></select>
+<input id="keyword" type="text"></input>
 <button onclick="myFunction()">Try it</button>
 <p id="demo">Click the button to change the text in this paragraph.</p>
 <script>
 function myFunction() {
         var yourSelect = document.getElementById( "option" );
         var value1 = yourSelect.options[ yourSelect.selectedIndex ].value;
-alert(value1);
+        var keywords1 = document.getElementById("keyword");
+        var value2 = keywords1.value;
+alert(value2);
 window.location.href = "a.php?name=" + value1; 
 }
 </script>

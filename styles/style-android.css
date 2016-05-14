@@ -60,11 +60,12 @@ border-radius: 100%;
 }
 .login
 {
-position:absolute;
+position:relative;
+float:left;
 top:40%;
 #left:29%;
 right:0%;
-width:65%;
+width:85%;
 }
 .email1{
 margin-left:0%;
@@ -123,17 +124,17 @@ background-color:red;
 }
 #main{
 position:absolute;
-top:5%;
+top:20%;
 left:18%;
 width:82%;
-height:95%;
+height:75%;
 }
 #time{
 position:absolute;
-top:-1%;
+top:-5%;
 left:18%;
 width:82%;
-height:6%;
+height:3%;
 }
 p.clock{
 text-align:left;
@@ -473,7 +474,7 @@ a.contact:hover{
 color:red;
 }
 button.r{
-top:90%;
+top:80%;
 right:0%;
 position:fixed;
 width:8%;
@@ -488,7 +489,7 @@ display: inline-block;
 #font-size: 16px;
 }
 p.control{
-top:92%;
+top:84%;
 right:0%;
 position:fixed;
 }
