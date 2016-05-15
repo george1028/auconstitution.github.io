@@ -1,7 +1,9 @@
 <select id="option" name="option1[]"><option value="1">IT</option><option value="2">Accounting</option></select>
 <input id="keyword" type="text"></input>
 <button onclick="myFunction()">Try it</button>
+<body>ttt</body>
 <p id="demo">Click the button to change the text in this paragraph.</p>
+<a href="c.php">page 3</a><br />
 <script>
 function myFunction() {
         var yourSelect = document.getElementById( "option" );
